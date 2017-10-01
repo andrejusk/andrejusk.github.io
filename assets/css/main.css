@@ -1592,3 +1592,17 @@
 		body.is-loading #footer {
 			opacity: 0;
 		}
+
+/* Custom Stuff */
+
+	.logo.container {
+		display: flex;
+		line-height: 0;
+	}
+
+	.logo.container img {
+		padding: 0;
+		margin: auto;
+		width: 70%;
+		height: 70%;
+	}
