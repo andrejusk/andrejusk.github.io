@@ -7,39 +7,41 @@ paginate = 3
 theme = "hugo-alageek-theme"
 
 [params]
-copyright = "© 2019 Andrejus Kostarevas"
-copyrightUrl = "https://andrejus.uk/"
-latestpostcount = 5
-faviconfile = "favicon-32x32.png"
-logofile = "logo.svg"
-highlightjs = true
+    AuthorName = "Andrejus Kostarevas"
+    GitHubUser = "andrejusk"
+    copyright = "© 2019 Andrejus Kostarevas"
+    copyrightUrl = "https://andrejus.uk/"
+    latestpostcount = 5
+    faviconfile = "favicon-32x32.png"
+    logofile = "logo.svg"
+    highlightjs = true
 
 [[menu.primary]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 10
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 10
 
 [[menu.primary]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 20
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
 
 [[menu.secondary]]
-identifier = "github"
-name = "GitHub"
-url = "https://github.com/andrejusk/"
-weight = 110
+    identifier = "github"
+    name = "GitHub"
+    url = "https://github.com/andrejusk/"
+    weight = 110
 
 [[menu.secondary]]
-identifier = "twitter"
-name = "Twitter"
-url = "https://twitter.com/akostarevas/"
-weight = 110
+    identifier = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/akostarevas/"
+    weight = 110
 
 [[menu.secondary]]
-identifier = "linkedin"
-name = "LinkedIn"
-url = "https://www.linkedin.com/in/andrejusk/"
-weight = 120
+    identifier = "linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/andrejusk/"
+    weight = 120
