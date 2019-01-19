@@ -3,7 +3,7 @@ title = "Exposing a Feathers.JS HTTP API in Kubernetes using Ingress"
 description = ""
 tags = [
     "typescript",
-    "javascript",
+    "node.js",
     "k8s",
     "gcp",
 ]
@@ -14,6 +14,16 @@ categories = [
 ]
 menu = "main"
 +++
+
+## Prelude
+
+This article was published during my time
+at [Think Engineer](http://www.think-engineer.com/), 
+where I developed cloud applications
+for our prototype Internet of Things (IoT) projects.
+The article idea came up after we solved
+a challenging networking issue, while
+debugging our internal IoT platform.  
 
 ## Background
 
