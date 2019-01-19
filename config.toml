@@ -1,22 +1,17 @@
-author = "Gökmen Görgen"
+author = "Andrejus Kostarevas"
+title = "Andrejus Kostarevas"
 baseurl = "/"
 canonifyurls = true
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
-theme = "alageek"
-title = "alaGeek Theme"
+theme = "hugo-alageek-theme"
 
 [params]
-copyright = "© 2018 by Gökmen Görgen"
-copyrightUrl = "https://gokmengorgen.net"
-faviconfile = "https://gokmengorgen.net/img/laughing-man-favicon.png"
-latestpostcount = 5
-logofile = "https://gokmengorgen.net/img/laughing-man.png"
+copyright = "© 2019 Andrejus Kostarevas"
+copyrightUrl = "https://andrejus.uk/"
+faviconfile = "favicon.ico"
+logofile = "logo.svg"
 highlightjs = true
-
-[[params.best_posts]]
-title = "Migrate to Hugo from Jekyll"
-url = "/blog/migrate-from-jekyll/"
 
 [[menu.primary]]
 identifier = "blog"
@@ -31,13 +26,19 @@ url = "/about/"
 weight = 20
 
 [[menu.secondary]]
-identifier = "patreon"
-name = "Become a patron"
-url = "https://www.patreon.com/bePatron?u=10637849"
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/andrejusk/"
 weight = 110
 
 [[menu.secondary]]
-identifier = "bmc"
-name = "Buy me a coffee"
-url = "https://www.buymeacoffee.com/gokmen"
+identifier = "twitter"
+name = "Twitter"
+url = "https://twitter.com/akostarevas/"
+weight = 110
+
+[[menu.secondary]]
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/andrejusk/"
 weight = 120
