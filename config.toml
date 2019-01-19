@@ -1,6 +1,7 @@
 author = "Andrejus Kostarevas"
 title = "Andrejus Kostarevas"
 baseurl = "/"
+enableGitInfo = true
 canonifyurls = true
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
@@ -8,7 +9,10 @@ theme = "hugo-alageek-theme"
 
 [params]
     AuthorName = "Andrejus Kostarevas"
-    GitHubUser = "andrejusk"
+    github = "andrejusk"
+    twitter = "akostarevas"
+    linkedin = "andrejusk"
+    repo = "andrejusk.github.io"
     enableGitInfo = "true"
     copyright = "© 2019 Andrejus Kostarevas"
     copyrightUrl = "https://andrejus.uk/"

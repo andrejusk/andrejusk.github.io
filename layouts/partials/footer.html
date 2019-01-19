@@ -4,12 +4,14 @@
                 <div class="col-sm-12 col-md-5">
                     {{ if .Site.Params.copyright }}
                         <div class="mx-0 mx-md-4 mb-2 text-center text-md-left">
-                            {{ if .IsPage }}<small class="gray"><em>Updated: {{ .Page.Lastmod }}, Version: {{ .GitInfo.AbbreviatedHash }}</em></small> - {{ end }}
                             {{ if .Site.Params.copyrightUrl }}
                                 <a href="{{ .Site.Params.copyrightUrl }}">{{ .Site.Params.copyright }}</a>
                             {{ else }}
                                 <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright }}</a>
-                            {{ end }}
+                            {{ end }} -
+                            <a a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}">
+                                {{ .GitInfo.AbbreviatedHash }}
+                            </a>
                         </div>
                     {{ end }}
                 </div>
