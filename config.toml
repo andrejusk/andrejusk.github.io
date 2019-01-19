@@ -9,6 +9,7 @@ theme = "hugo-alageek-theme"
 [params]
     AuthorName = "Andrejus Kostarevas"
     GitHubUser = "andrejusk"
+    enableGitInfo = "true"
     copyright = "© 2019 Andrejus Kostarevas"
     copyrightUrl = "https://andrejus.uk/"
     latestpostcount = 5
