@@ -34,15 +34,15 @@ googleAnalytics = "UA-132770332-1"
     weight = 10
 
 [[menu.primary]]
-    identifier = "projects"
-    name = "Projects"
-    url = "/project/"
-    weight = 20
-
-[[menu.primary]]
     identifier = "talks"
     name = "Talks"
     url = "/talk/"
+    weight = 20
+
+[[menu.primary]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/project/"
     weight = 30
 
 [[menu.primary]]
@@ -50,6 +50,12 @@ googleAnalytics = "UA-132770332-1"
     name = "About"
     url = "/about/"
     weight = 40
+
+[[menu.primary]]
+    identifier = "bts"
+    name = "BTS"
+    url = "/behind-the-scenes/"
+    weight = 50
 
 [[menu.secondary]]
     identifier = "github"
