@@ -18,8 +18,8 @@ theme = "hugo-alageek-theme"
     copyright = "© 2019 Andrejus Kostarevas"
     copyrightUrl = "https://andrejus.uk/"
     latestpostcount = 5
-    faviconfile = "favicon-32x32.png"
-    logofile = "logo.svg"
+    faviconfile = "img/favicon-32x32.png"
+    logofile = "img/logo.svg"
     highlightjs = true
 
 [[menu.primary]]
