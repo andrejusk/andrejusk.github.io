@@ -6,13 +6,28 @@ tags = [
     "infosec",
     "php"
 ]
-date = "2018-09-01"
+date = "2018-09-19"
 categories = [
     "explorative",
     "cloud",
 ]
 menu = "main"
 +++
+
+## PHP Bershire _September Meetup_
+_Wednesday 6pm_ - _19th September 2018_ -
+[Website](https://www.meetup.com/PHP-Berkshire/events/254003810/) -
+[Slides](https://docs.google.com/presentation/d/1mHnHneh78jgThznnA6IgeazdVnmgceYXOJxMvlSmS_Q)
+
+***
+
+## Electromagnetic Field _2018_
+_Saturday 10am_ - _1st September 2018_ -
+[Website](https://www.emfcamp.org/line-up/2018/371-attacking-websites-for-educational-purposes-only) -
+[Video](https://www.youtube.com/watch?v=2uA2xdUKWZE) -
+[Slides](https://docs.google.com/presentation/d/1KRe1Abxy5txgmuNStJe9qkcoCMLdEx_7v9nPy_HZ1ds)
+
+***
 
 ## Abstract 
 Information security is a big deal nowadays as more and more people start to take their privacy online very seriously. But what's the point of protecting yourself if the web services you use are vulnerable to big scary hackers? 
