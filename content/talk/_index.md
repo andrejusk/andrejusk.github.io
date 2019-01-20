@@ -43,4 +43,4 @@ Links:
 _November 7, 2018 - [Getting Started in IoT using the Google Cloud](./intro-to-iot)_
 
 Links: 
-[Speaker Line-up](https://www.rdgukoh.co.uk/edition/november-2018)
+[Website](https://www.rdgukoh.co.uk/edition/november-2018)
