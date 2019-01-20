@@ -22,6 +22,14 @@ theme = "hugo-alageek-theme"
     logofile = "img/logo.svg"
     highlightjs = true
 
+[[params.best_posts]]
+    title = "Sample Article"
+    url = "/blog/k8s-feathers/"
+
+[[params.best_posts]]
+    title = "Sample About"
+    url = "/about/"
+
 [[menu.primary]]
     identifier = "blog"
     name = "Blog"
