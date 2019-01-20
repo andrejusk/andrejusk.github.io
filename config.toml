@@ -33,10 +33,15 @@ theme = "hugo-alageek-theme"
     weight = 10
 
 [[menu.primary]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/project/"
+    weight = 20
+[[menu.primary]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 20
+    weight = 40
 
 [[menu.secondary]]
     identifier = "github"
