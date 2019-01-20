@@ -5,7 +5,7 @@ menu = "main"
 +++
 
 Hey! As of {{ .date }}, I am currently a [BSc Computer Science](http://www.reading.ac.uk/computer-science/) 
-finalist at the [University of Reading](http://reading.ac.uk). 
+finalist at the [University of Reading](http://reading.ac.uk), UK. 
 I work part-time as a Design & Development Engineer at [Think Engineer](http://think-engineer.com), 
 where I specialise in leveraging Cloud for our Internet of Things (IoT) 
 applications. This has led to my [dissertation](https://github.com/iowine) being based in IoT.
