@@ -6,7 +6,7 @@ menu = "main"
 
 Hi! This website is currently **under construction** - check back for updates.
 
-_(the minimalistic theme is staying though)_
-
 In the meantime, check out the [about me](./about) section,
-my contact details or the posts below!
+my contact details, or the posts below!
+
+_the minimalistic theme is staying though_
