@@ -49,7 +49,7 @@ a:hover {
     color: #333333;
     font-size: 2.3rem;
     font-family: "Helvetica Neue", "Arial", sans-serif;
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.125rem;
 }
 
 .header ul.nav li a {
