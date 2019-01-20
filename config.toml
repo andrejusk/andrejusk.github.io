@@ -9,6 +9,7 @@ theme = "hugo-alageek-theme"
 
 [params]
     AuthorName = "Andrejus Kostarevas"
+    subtitle = "software engineer / student"
     github = "andrejusk"
     twitter = "akostarevas"
     linkedin = "andrejusk"

@@ -50,6 +50,14 @@ a:hover {
     font-size: 2.3rem;
     font-family: "Helvetica Neue", "Arial", sans-serif;
     letter-spacing: -0.125rem;
+    margin-bottom: 0;
+}
+
+.header h2.subname {
+    color: #4C4C4C;
+    font-size: 1.42rem;
+    font-family: "Helvetica Neue", "Arial", sans-serif;
+    letter-spacing: 0.055rem;
 }
 
 .header ul.nav li a {

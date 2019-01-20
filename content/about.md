@@ -4,7 +4,7 @@ date = "2019-01-19"
 menu = "main"
 +++
 
-hey! I'm currently a [BSc Computer Science](http://www.reading.ac.uk/computer-science/) 
+Hey! As of {{ .date }}, I am currently a [BSc Computer Science](http://www.reading.ac.uk/computer-science/) 
 finalist at the [University of Reading](http://reading.ac.uk). 
 I work part-time as a Design & Development Engineer at [Think Engineer](http://think-engineer.com), 
 where I specialise in leveraging Cloud for our Internet of Things (IoT) 
