@@ -6,6 +6,7 @@ canonifyurls = true
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 theme = "hugo-alageek-theme"
+googleAnalytics = "UA-132770332-1"
 
 [params]
     AuthorName = "Andrejus Kostarevas"
