@@ -37,6 +37,13 @@ theme = "hugo-alageek-theme"
     name = "Projects"
     url = "/project/"
     weight = 20
+
+[[menu.primary]]
+    identifier = "talks"
+    name = "Talks"
+    url = "/talk/"
+    weight = 30
+
 [[menu.primary]]
     identifier = "about"
     name = "About"

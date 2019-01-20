@@ -4,6 +4,8 @@ latest_posts:
   other: "Latest posts"
 projects:
   other: "projects"
+talks:
+  other: "talks"
 page_not_found_description:
   other: "The page you were looking for does not exist."
 page_not_found_link:
