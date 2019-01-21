@@ -23,9 +23,9 @@
                     {{ end }}
 
                     {{ if isset .Site.Params "latestpostcount" }}
-                        
+                            
                         <div class="mx-0 mx-md-4 posts">
-                            {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
+                            {{ $nbPosts := len (where .Data.Pages "Section" "talk") }}
                             {{ if gt $nbPosts 0 }}
                                 <div class="page-heading">{{ i18n "latest_talks" }}</div>
                                 <ul class="px-0">
@@ -38,7 +38,7 @@
                                 </ul>
 
                                 {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                                    <a href="./blog/" class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
+                                    <a href="./talk/" class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
                                 {{ end }}
                             {{ end }}
                         </div>

@@ -8,4 +8,4 @@ This section will eventually contain
 detail on the projects I've worked on.
 
 In the meantime,  feel free check out my
-[GitHub profile](https://github.com/andrejusk)!
+[GitHub profile](https://github.com/andrejusk).

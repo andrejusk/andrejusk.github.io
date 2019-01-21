@@ -10,6 +10,9 @@
                             <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright }}</a>
                         {{ end }}
                         {{ if $.GitInfo }}
+                            <a href="https://app.netlify.com/sites/{{ .Site.Params.netlify }}/deploys/{{ .GitInfo.Hash }}/"> 
+                                build
+                            </a>
                             <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
                                 {{ .GitInfo.AbbreviatedHash }}
                             </a>

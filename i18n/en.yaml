@@ -4,6 +4,8 @@ latest_posts:
   other: "Latest posts"
 latest_talks:
   other: "Latest talks"
+latest_projects:
+  other: "Latest projects"
 projects:
   other: "projects"
 talks:

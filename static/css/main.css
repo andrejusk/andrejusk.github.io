@@ -1,6 +1,11 @@
 /* 
     OVERRIDES
 */
+
+.text-bts {
+    color: rgb(204, 204, 204) !important;
+}
+
 .text-github {
     color: #211f1f !important;
 }

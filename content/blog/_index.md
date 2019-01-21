@@ -4,4 +4,7 @@ date = "2019-01-20"
 menu = "main"
 +++
 
-Read up on the blogs I've written in the past.
+This section will eventually contain the reports & articles I've written.
+
+In the meantime, feel free check out the article(s) below.
+
