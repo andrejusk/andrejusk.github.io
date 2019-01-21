@@ -16,10 +16,10 @@
                             <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
                                 {{ .GitInfo.AbbreviatedHash }}
                             </a>
-                            <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/releases/tag/{{ .Site.Params.version }}">
-                                {{ .Site.Params.version }}
-                            </a>
                         {{ end }}
+                        <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/releases/tag/{{ .Site.Params.version }}">
+                            {{ .Site.Params.version }}
+                        </a>
                     </div>
                 {{ end }}
             </div>
