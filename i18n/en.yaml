@@ -2,6 +2,12 @@ blog_posts:
   other: "blog posts"
 latest_posts:
   other: "Latest posts"
+latest_talks:
+  other: "Latest talks"
+projects:
+  other: "projects"
+talks:
+  other: "talks"
 page_not_found_description:
   other: "The page you were looking for does not exist."
 page_not_found_link:
