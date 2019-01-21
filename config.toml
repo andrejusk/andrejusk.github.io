@@ -1,6 +1,6 @@
 author = "Andrejus Kostarevas"
-title = "Andrejus Kostarevas"
-baseurl = "/"
+title = "andrejus kostarevas"
+baseurl = "https://andrejus.uk/"
 enableGitInfo = true
 canonifyurls = true
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
@@ -9,6 +9,7 @@ theme = "hugo-alageek-theme"
 
 [params]
     AuthorName = "Andrejus Kostarevas"
+    subtitle = "software engineer / student"
     github = "andrejusk"
     twitter = "akostarevas"
     linkedin = "andrejusk"
@@ -17,9 +18,13 @@ theme = "hugo-alageek-theme"
     copyright = "© 2019 Andrejus Kostarevas"
     copyrightUrl = "https://andrejus.uk/"
     latestpostcount = 5
-    faviconfile = "favicon-32x32.png"
-    logofile = "logo.svg"
+    faviconfile = "img/favicon-32x32.png"
+    logofile = "img/logo.svg"
     highlightjs = true
+
+[[params.best_posts]]
+    title = "Check out the Website Repository"
+    url = "https://github.com/andrejusk/andrejusk.github.io/tree/develop"
 
 [[menu.primary]]
     identifier = "blog"
@@ -37,7 +42,7 @@ theme = "hugo-alageek-theme"
     identifier = "github"
     name = "GitHub"
     url = "https://github.com/andrejusk/"
-    weight = 110
+    weight = 100
 
 [[menu.secondary]]
     identifier = "twitter"

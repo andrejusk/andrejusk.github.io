@@ -1,10 +1,10 @@
 +++
-title = "Hi"
+title = "hi"
 date = "2019-01-19"
 menu = "main"
 +++
 
-Hi! The website is currently **under construction**, check back soon!
+Hi! This website is currently **under construction** - check back for updates.
 
-In the mean time, check out the [about me](./about) section,
-my contact details above or the articles below!
+In the meantime, check out the [about me](./about) section,
+my contact details or the posts below!
