@@ -18,3 +18,6 @@ In the little free time I have, I actively engage with the local tech community 
 as a co-organiser for [Google Developer Group Reading & Thames Valley](https://meetup.com/GDG-Reading-Thames-Valley/) and as well as running 
 the [Reading University Hacking](https://ruhacking.me) society.
 
+If you'd like to get in touch, shoot me an email over at **[your name] [at] [this domain]**, 
+it'll get forwarded to my main inbox and I can get back in touch with you.
+If you'd like something more urgent, check out my contact details below!
