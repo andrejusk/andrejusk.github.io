@@ -11,7 +11,7 @@ googleAnalytics = "UA-132770332-1"
 [params]
     AuthorName = "Andrejus Kostarevas"
     subtitle = "software engineer / student"
-    version = "v1.4"
+    version = "v2.8"
     github = "andrejusk"
     twitter = "akostarevas"
     linkedin = "andrejusk"
