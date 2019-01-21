@@ -24,7 +24,7 @@ body {
 }
 
 a {
-    color: #428bca;
+    color: #2196f3;
     transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
     -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
     -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
