@@ -352,6 +352,10 @@ img {
     display: inline-block!important
 }
 
+.d-none {
+    display: none!important;
+}
+
 @media (min-width: 768px) {
     .d-md-none {
         display:none!important
