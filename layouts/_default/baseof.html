@@ -33,11 +33,11 @@
     <link rel="canonical" href="{{ .Permalink }}">
 
     {{ with resources.Get "css/bootstrap.crit.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
+        <style>{{ .Content | safeCSS }}</style>
     {{ end }}
 
     {{ with resources.Get "css/main.css" | minify }}
-    <style>{{ .Content | safeCSS }}</style>
+        <style>{{ .Content | safeCSS }}</style>
     {{ end }}
 
     <link rel="shortcut icon"
@@ -82,17 +82,22 @@
         });
     </script>
     <script>
-        var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById("deferred");
-        var replacement = document.createElement("div");
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement)
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
+
+        var loadDeferredStyles = () => {
+            var addStylesNode = document.getElementById("deferred")
+            var replacement = document.createElement("div")
+            replacement.innerHTML = addStylesNode.textContent
+            document.body.appendChild(replacement)
+            addStylesNode.parentElement.removeChild(addStylesNode)
+        }
+
+        var raf = window.requestAnimationFrame || 
+            window.mozRequestAnimationFrame ||
+            window.webkitRequestAnimationFrame || 
+            window.msRequestAnimationFrame
+
+        if (raf) raf(() => { window.setTimeout(loadDeferredStyles, 0) })
+        else window.addEventListener('load', loadDeferredStyles)
     </script>
 
     {{ if .Site.Params.highlightjs }}
