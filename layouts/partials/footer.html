@@ -26,37 +26,37 @@
             <div class="col-sm-12 col-md-5">
                 <div class="mx-0 mx-md-4 text-center text-md-right">
                     {{ if .Site.Params._500px }}
-                        <a href="https://500px.com/{{ .Site.Params._500px }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://500px.com/{{ .Site.Params._500px }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/500px.svg" alt="500px" />
                         </a>
                     {{ end }}
 
                     {{ if .Site.Params.gitlab }}
-                        <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/gitlab.svg" alt="gitlab" />
                         </a>
                     {{ end }}
 
                     {{ if .Site.Params.facebook }}
-                        <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/facebook.svg" alt="facebook" />
                         </a>
                     {{ end }}
 
                     {{ if .Site.Params.github }}
-                        <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/github.svg" alt="github" />
                         </a>
                     {{ end }}
 
                     {{ if .Site.Params.twitter }}
-                        <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/twitter.svg" alt="twitter" />
                         </a>
                     {{ end }}
 
                     {{ if .Site.Params.linkedin }}
-                        <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" class="mx-1 ml-md-2 mr-md-0">
+                        <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0">
                             <img class="icon" src="{{ .Site.BaseURL }}img/linkedin.svg" alt="linkedin" />
                         </a>
                     {{ end }}
