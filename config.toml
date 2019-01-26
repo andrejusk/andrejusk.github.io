@@ -4,6 +4,8 @@ enableGitInfo = true
 canonifyurls = true
 paginate = 3
 languagecode = "en"
+pygmentsCodefences = true
+pygmentsstyle = "vs"
 
 # Content
 title = "andrejus kostarevas"
