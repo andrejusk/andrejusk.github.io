@@ -3,6 +3,7 @@ baseurl = "https://andrejus.uk/"
 enableGitInfo = true
 canonifyurls = true
 paginate = 3
+languagecode = "en"
 
 # Content
 title = "andrejus kostarevas"
@@ -10,6 +11,7 @@ theme = "hugo-alageek-theme"
 googleAnalytics = "UA-132770332-1"
 copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 
+# Website parameters
 [params]
     subtitle = "software engineer / student"
     description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
@@ -32,10 +34,18 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
     logofile = "img/logo.svg"
     highlightjs = true
 
+# Languages
+[languages]
+    [languages.en]
+        languageName = "English"
+        weight = 1
+
+# Featured
 [[params.best_posts]]
     title = "Check out the Website Repository"
     url = "https://github.com/andrejusk/andrejusk.github.io/tree/develop"
 
+# Menu
 [[menu.primary]]
     identifier = "blog"
     name = "Blog"
@@ -66,6 +76,7 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
     url = "/behind-the-scenes/"
     weight = 50
 
+# Links
 [[menu.secondary]]
     identifier = "github"
     name = "GitHub"
