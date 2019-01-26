@@ -1,25 +1,31 @@
-author = "Andrejus Kostarevas"
-title = "andrejus kostarevas"
+# Config
 baseurl = "https://andrejus.uk/"
 enableGitInfo = true
 canonifyurls = true
-copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
+
+# Content
+title = "andrejus kostarevas"
 theme = "hugo-alageek-theme"
 googleAnalytics = "UA-132770332-1"
+copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
 
 [params]
-    AuthorName = "Andrejus Kostarevas"
     subtitle = "software engineer / student"
     version = "v2.8.1"
+    copyright = "© 2019"
+
+    # Links
     github = "andrejusk"
     twitter = "akostarevas"
     linkedin = "andrejusk"
     repo = "andrejusk.github.io"
     netlify = "goofy-feynman-78d8ed"
-    enableGitInfo = "true"
-    copyright = "© 2019"
     copyrightUrl = "https://andrejus.uk/"
+
+    # Config
+    noauthor = false
+    enableGitInfo = "true"
     latestpostcount = 5
     faviconfile = "img/favicon-32x32.png"
     logofile = "img/logo.svg"
