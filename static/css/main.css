@@ -154,7 +154,6 @@ a:hover {
 .content .markdown pre {
     font-family: "Menlo", monospace;
     font-size: 0.98rem;
-    background-color: #f7f7f7;
 }
 
 .content .markdown code {
