@@ -32,7 +32,7 @@
 */
 /* Global styles */
 body {
-    font-family: "Raleway";
+    font-family: "Raleway" !important;
 }
 
 a {
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .content .markdown {
-    font-family: "Merriweather";
+    font-family: "Merriweather" !important;
     font-size: 1.1em;
     line-height: 1.75em;
     color: #313537;
