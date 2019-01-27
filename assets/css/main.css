@@ -24,7 +24,7 @@ a:hover {
 
 .nav-lower {
     letter-spacing: 0.035rem;
-    margin-right: 1.75rem;
+    margin-right: 0.45rem;
 }
 
 @media (min-width: 767.98px) {
@@ -36,7 +36,7 @@ a:hover {
     
     .nav-lower {
         letter-spacing: 0.015rem;
-        margin-right: 3.50rem;
+        margin-right: 2.05rem;
     }
 
 }
@@ -68,7 +68,7 @@ a:hover {
     font-size: 1.42147rem;
     font-family: "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
     font-weight: 600;
-    letter-spacing: 0.055rem;
+    letter-spacing: 0.060rem;
 }
 
 .header ul.nav li a {
