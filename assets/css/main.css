@@ -1,35 +1,4 @@
-/* 
-    OVERRIDES
-*/
 
-.text-bts {
-    color: rgb(204, 204, 204) !important;
-}
-
-.text-github {
-    color: #211f1f !important;
-}
-
-.text-twitter {
-    color: #00aced !important;
-}
-
-.text-linkedin {
-    color: #0077b5 !important;
-}
-
-.header h2.subname {
-    color: #4C4C4C;
-    font-size: 1.42147rem;
-    font-family: "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
-    letter-spacing: 0.055rem;
-}
-
-
-
-/*
-    THEME
-*/
 /* Global styles */
 body {
     font-family: "Raleway", sans-serif !important;
@@ -63,6 +32,14 @@ a:hover {
     font-family: "Helvetica Neue", "Segoe UI", sans-serif;
     letter-spacing: -0.125rem;
     margin-bottom: 0;
+}
+
+.header h2.subname {
+    color: #4C4C4C;
+    font-size: 1.42147rem;
+    font-family: "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.055rem;
 }
 
 .header ul.nav li a {
@@ -229,6 +206,34 @@ a:hover {
 .content .navigation .icon {
     width: 16px;
     height: 16px;
+}
+
+/* Menu texts */
+.text-bts {
+    color: rgba(0, 0, 0, 0) !important;
+    -o-transition: color .2s ease-out;
+    -ms-transition: color .2s ease-out;
+    -moz-transition: color .2s ease-out;
+    -webkit-transition: color .2s ease-out;
+    /* ...and now override with proper CSS property */
+    transition: color .2s ease-out;
+}
+
+.text-bts:hover {
+    color: rgb(204, 204, 204) !important;    
+}
+
+.text-github {
+    font-weight: 300;
+    color: #211f1f !important;
+}
+
+.text-twitter {
+    color: #00aced !important;
+}
+
+.text-linkedin {
+    color: #0077b5 !important;
 }
 
 /* Partial: Footer */
