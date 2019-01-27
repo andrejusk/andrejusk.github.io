@@ -47,8 +47,20 @@ pygmentsstyle = "vs"
 # Languages
 [languages]
     [languages.en]
-    languageName = "English"
-    weight = 1
+        languageName = "English"
+        weight = 1
+    [languages.lt]
+        contentDir = "content"
+        baseURL = "https://andrejus.uk/"
+        languageName = "Lietuvių"
+        title = "andrejus kostarevas"
+        weight = 2
+    [languages.ru]
+        contentDir = "content"
+        baseURL = "https://andrejus.uk/"
+        languageName = "Russian"
+        title = "андрей костарев"
+        weight = 3
 
 # Menu
 [menu]
