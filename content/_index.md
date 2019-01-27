@@ -11,5 +11,3 @@ my contact details, or the posts below.
 
 _the minimalistic theme is staying though_
 
-***
-
