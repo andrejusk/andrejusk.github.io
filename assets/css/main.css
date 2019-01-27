@@ -42,9 +42,15 @@ a:hover {
 }
 
 /* Partial: Header */
-.header .row {
+.header .row,
+.content .markdown {
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(0,0,0,.1)
+}
+
+.content .markdown {
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
 }
 
 .footer .row {
