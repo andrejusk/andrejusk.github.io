@@ -63,6 +63,7 @@ a:hover {
 }
 
 .header .logo {
+    width: 120px;
     max-height: 120px;
 }
 
