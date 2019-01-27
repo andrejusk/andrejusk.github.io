@@ -10,3 +10,6 @@ In the meantime, check out the [about me](./about) section,
 my contact details, or the posts below.
 
 _the minimalistic theme is staying though_
+
+***
+
