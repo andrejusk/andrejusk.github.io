@@ -3,9 +3,7 @@ title = "Exposing a Feathers.JS HTTP API in Kubernetes using Ingress"
 description = ""
 tags = [
     "typescript",
-    "node.js",
-    "k8s",
-    "gcp",
+    "gcp"
 ]
 date = "2018-08-16"
 categories = [
