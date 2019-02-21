@@ -42,11 +42,6 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
         languageName = "English"
         weight = 1
 
-# Featured
-[[params.best_posts]]
-    title = "Check out the Website Repository"
-    url = "https://github.com/andrejusk/andrejusk.github.io/tree/develop"
-
 # Menu
 [[menu.primary]]
     identifier = "blog"
