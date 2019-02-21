@@ -2,10 +2,8 @@
 title = "Gatwick Drones - the Social, Legal and Ethical Aspects of Computing"
 description = ""
 tags = [
-    "drones",
-    "social",
-    "ethical",
-    "legal",
+    "sleac",
+    "coursework"
 ]
 date = "2019-01-13"
 categories = [
