@@ -7,7 +7,7 @@ tags = [
     "ethical",
     "legal",
 ]
-date = "2019-01-"
+date = "2019-01-13"
 categories = [
     "University"
 ]
