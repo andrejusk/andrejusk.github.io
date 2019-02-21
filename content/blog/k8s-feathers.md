@@ -18,12 +18,13 @@ menu = "main"
 ## Prelude
 
 This article was published during my time
-at [Think Engineer](http://www.think-engineer.com/), 
-where I developed cloud applications
+at Think Engineer, 
+where I developed cloud back-ends
 for our prototype Internet of Things (IoT) projects.
 The article idea came up after we solved
 a challenging networking issue, while
-debugging our internal IoT platform.  
+debugging our internal IoT platform. 
+Original post [here](https://think-engineer.com/blog/cloud-computing/exposing-a-feathers-js-http-api-in-kubernetes-using-ingress).
 
 ## Background
 
