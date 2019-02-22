@@ -145,9 +145,24 @@ a:hover {
 
 .content .markdown {
     font-family: "Merriweather"!important;
-    font-size: 1.1em !important;
-    line-height: 1.75em;
+    font-size: 1.4em !important;
+    line-height: 2.1em !important;
     color: #313537;
+}
+
+.markdown h2 {
+    margin-top: 2rem;
+    font-size: 1.6em !important;
+}
+
+.markdown h3 {
+    margin-top: 1rem;
+    font-size: 1.4em !important;
+}
+
+.markdown h4 {
+    margin-top: 0.5rem;
+    font-size: 1.3em !important;
 }
 
 .content twitterwidget {
