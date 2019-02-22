@@ -351,3 +351,51 @@ a:hover {
         margin-right: 0;
     }
 }
+
+/* Fade */
+.name,
+.subname,
+h1,
+.nav-upper,
+.nav-lower,
+.meta,
+.markdown,
+.best-posts,
+.posts,
+.footer {
+    opacity: 0;
+    transition: opacity 0.075s ease-out;
+}
+
+/* Load subname with name */
+.wf-raleway-n7-active .wf-merriweather-n7-active .name,
+.wf-merriweather-n7-active .subname,
+/* Navigation */
+.wf-raleway-n7-active .nav-upper,
+.wf-raleway-n4-active .nav-lower,
+/* Content */
+.wf-raleway-n4-active h1,
+.wf-raleway-n4-active .meta {
+    opacity: 1;
+}
+
+.wf-active .markdown,
+.wf-active .best-posts,
+.wf-active .posts,
+.wf-active .footer {
+    opacity: 1;
+}
+
+/*
+.wf-loading html {
+    color: #0000FF !important;
+}
+
+.wf-loading h1 {
+    color: #FF0000 !important;
+    transition: color 0.1s ease;
+}
+.wf-loading h2 {
+    color: #00FF00 !important;
+}
+*/
