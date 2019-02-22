@@ -5,7 +5,8 @@ body {
 }
 
 a,
-.footer a {
+.footer a,
+.content a {
     color: #2196f3;
     transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
     -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
