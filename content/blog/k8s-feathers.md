@@ -285,25 +285,21 @@ J. Rulifson,
 "Decode Encode LAnguage (DEL)", 
 Network Working Group RFC-5, 
 June 2 1969. 
-[[Online](https://tools.ietf.org/html/rfc5)].
 
 [2]: https://github.com/feathersjs/feathers
 [[2]] - 
 Feathers Contributors, 
 Feathers.JS, 
 Feathers. 
-[[Online](https://github.com/feathersjs/feathers)].
 
 [3]: https://kubernetes.io/docs/concepts/services-networking/ingress/
 [[3]] - 
 The Kubernetes Authors,
 "Ingress", 
 Kubernetes. 
-[[Online](https://kubernetes.io/docs/concepts/services-networking/ingress/)].
 
 [4]: https://github.com/feathersjs/feathers/issues/728#issuecomment-355350349
 [[4]] - 
 keesee, daffl, 
 "Service at root. '/'", 
 Feathers. 
-[[Online](https://github.com/feathersjs/feathers/issues/728#issuecomment-355350349)].
