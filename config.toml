@@ -17,7 +17,7 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
 [params]
     subtitle = "software engineer / student"
     description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
-    version = "v2.11.3"
+    version = "v2.12.0"
     copyright = "© 2019"
 
     # Links
@@ -41,11 +41,6 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
     [languages.en]
         languageName = "English"
         weight = 1
-
-# Featured
-[[params.best_posts]]
-    title = "Check out the Website Repository"
-    url = "https://github.com/andrejusk/andrejusk.github.io/tree/develop"
 
 # Menu
 [[menu.primary]]

@@ -3,9 +3,7 @@ title = "Exposing a Feathers.JS HTTP API in Kubernetes using Ingress"
 description = ""
 tags = [
     "typescript",
-    "node.js",
-    "k8s",
-    "gcp",
+    "gcp"
 ]
 date = "2018-08-16"
 categories = [
@@ -18,12 +16,13 @@ menu = "main"
 ## Prelude
 
 This article was published during my time
-at [Think Engineer](http://www.think-engineer.com/), 
-where I developed cloud applications
+at Think Engineer, 
+where I developed cloud back-ends
 for our prototype Internet of Things (IoT) projects.
 The article idea came up after we solved
 a challenging networking issue, while
-debugging our internal IoT platform.  
+debugging our internal IoT platform. 
+Original post [here](https://think-engineer.com/blog/cloud-computing/exposing-a-feathers-js-http-api-in-kubernetes-using-ingress).
 
 ## Background
 
@@ -286,25 +285,21 @@ J. Rulifson,
 "Decode Encode LAnguage (DEL)", 
 Network Working Group RFC-5, 
 June 2 1969. 
-[[Online](https://tools.ietf.org/html/rfc5)].
 
 [2]: https://github.com/feathersjs/feathers
 [[2]] - 
 Feathers Contributors, 
 Feathers.JS, 
 Feathers. 
-[[Online](https://github.com/feathersjs/feathers)].
 
 [3]: https://kubernetes.io/docs/concepts/services-networking/ingress/
 [[3]] - 
 The Kubernetes Authors,
 "Ingress", 
 Kubernetes. 
-[[Online](https://kubernetes.io/docs/concepts/services-networking/ingress/)].
 
 [4]: https://github.com/feathersjs/feathers/issues/728#issuecomment-355350349
 [[4]] - 
 keesee, daffl, 
 "Service at root. '/'", 
 Feathers. 
-[[Online](https://github.com/feathersjs/feathers/issues/728#issuecomment-355350349)].
