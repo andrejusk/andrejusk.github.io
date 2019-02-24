@@ -33,6 +33,7 @@ copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all r
     enableGitInfo = "true"
     latestpostcount = 5
     faviconfile = "img/favicon-32x32.png"
+    meta_img = "images/logo_black.png"
     logofile = "img/logo.svg"
     highlightjs = true
 
