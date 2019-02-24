@@ -14,13 +14,16 @@ menu = "main"
 
 ## Prelude
 
-This report was written as part of our SLEAC module.
-{{ goal }}, {{ feedback }}.
+This report was written as part of our
+"Social, Legal and Ethical Aspects of Computing"
+University module, where the task was to pick 
+a recent news article and analyse
+the implications from this point of view.
 
 ## Abstract
 
 >This analysis discusses the recent Gatwick Airport incident relating to drones. The story is first summarised based on news articles and then the social, legal and ethical implications relating to drone use in the article are identified. For social implications, the societal benefit of drones is looked at, including recreational use, law enforcement and nature conservation. Limitations of such benefit is also considered and linked back to the main article. Authorities and legislation are looked at and acts of law surrounding the Drone Code - a CAA guide for drone owners - are identified. This research is applied to the story and future legislation from the article is considered. Lastly, the ethical implications surrounding drone use are considered, including drone safety, noise and issues relating to privacy and surveillance. It is concluded that for how much benefit drones bring, their concept is still new and legislation seems to still be catching up.
-  
+
 ## Introduction
 
 Computing has rapidly evolved to be a large part of humanity. With artificial intelligence coming into play, decisions have started being taken away from humans and given to machines; and those machines can now go where humans easily cannot. This can be seen in technologies such as robotics, driverless cars and drones.
@@ -31,9 +34,9 @@ Recently, the drone debate has resurfaced in the Gatwick Airport drone incident,
   
 ## Synopsis
 
-On December 19th, Gatwick’s runway was shut down after reports of devices flying over the airfield. Thousands of passengers were stranded or otherwise inconvenienced due to cancelled flights and flight diversions. The sightings would resurface as soon as the runway was reopened, implying the incident was a “deliberate act” of disruption [[1]]. The police and armed forces were deployed on December 20th, and the airport was back up and running on December 21st with more sightings shortly after. The final closure only lasted an hour, but there were knock-on delays on scheduled flights up until December 22nd [[2]].
+On December 19th, Gatwick’s runway was shut down after reports of devices flying over the airfield. Thousands of passengers were stranded or otherwise inconvenienced due to cancelled flights and flight diversions. The sightings would resurface as soon as the runway was reopened, implying the incident was a "deliberate act" of disruption [[1]]. The police and armed forces were deployed on December 20th, and the airport was back up and running on December 21st with more sightings shortly after. The final closure only lasted an hour, but there were knock-on delays on scheduled flights up until December 22nd [[2]].
   
-During the crisis, Gatwick spent £5 million on drone defense systems, and thousands of man hours were lost to the disruption and subsequent police investigation [[1]]. The alleged drone(s) used for the disruption were of “industrial specification”, likely pre-programmed with the specific route before takeoff, thus effectively eliminating the need of remotely piloting the drone, which could be tracked by radar. This may be part of the reason the investigation has not found the true suspect as of yet.
+During the crisis, Gatwick spent £5 million on drone defense systems, and thousands of man hours were lost to the disruption and subsequent police investigation [[1]]. The alleged drone(s) used for the disruption were of "industrial specification", likely pre-programmed with the specific route before takeoff, thus effectively eliminating the need of remotely piloting the drone, which could be tracked by radar. This may be part of the reason the investigation has not found the true suspect as of yet.
   
 ## Societal benefit of Drones
 
@@ -57,11 +60,11 @@ Drones address certain challenges biodiversity conservation faces. These can be 
 
 Consumer drones are still a relatively  new technology. As seen by the story, drone misuse can easily endanger people, aircraft and an entire international airport. Legislation in this area is still quite new, which is why a disruption on this scale was possible with very little trace.
 
-However, according to the article, certain travellers found it “strange” that two drones had led to such a disruption. According to them, one would expect better security in place and emergency actions in place for such a disruption [[1]]. This can be seen as ill-preparation from both sides.
+However, according to the article, certain travellers found it "strange" that two drones had led to such a disruption. According to them, one would expect better security in place and emergency actions in place for such a disruption [[1]]. This can be seen as ill-preparation from both sides.
   
 ## Laws surrounding Drone Use
 
-The main article mentions that “it is illegal to fly a drone within 1km of an airport or airfield boundary and flying above 400 feet is also banned” and that “endangering the safety of an aircraft is also a criminal offence, which can carry a prison sentence of five years”, however it fails to link it to any legislation [[1]].
+The main article mentions that "it is illegal to fly a drone within 1km of an airport or airfield boundary and flying above 400 feet is also banned" and that "endangering the safety of an aircraft is also a criminal offence, which can carry a prison sentence of five years", however it fails to link it to any legislation [[1]].
   
 Aviation safety in the UK is regulated by the Civil Aviation Authority (CAA). They determine policies for the use of airspace, the economic regulation of Heathrow, Gatwick and Stansted airports, as well licensing and financial fitness of airlines [[7]].
   
@@ -78,9 +81,9 @@ The two-page Drone Code document details several guidelines to safe recreational
 * Be legally liable for each flight
 * Stay away from aircraft, airport and airfields
 	
-Although the Drone Code mentions offenses and liability, it itself is not legislation, as it is published to “assist drone users in flying safely” [[9]]. This is mistaken by a few articles [[10]], who go in favour of keeping drone legality simplistic. Legislation
+Although the Drone Code mentions offenses and liability, it itself is not legislation, as it is published to "assist drone users in flying safely" [[9]]. This is mistaken by a few articles [[10]], who go in favour of keeping drone legality simplistic. Legislation
 
-Drone legislation stems heavily from civil aviation - the two most notable for this case being the Civil Aviation Act 1982 and the Aviation Security Act 1982. The Aviation Act [[11]] is built upon by drone laws, while the Security Act in particular is where “endangering safety of aircraft” is an offense [[12]].
+Drone legislation stems heavily from civil aviation - the two most notable for this case being the Civil Aviation Act 1982 and the Aviation Security Act 1982. The Aviation Act [[11]] is built upon by drone laws, while the Security Act in particular is where "endangering safety of aircraft" is an offense [[12]].
   
 The two main pieces of drone legislation are The Air Navigation Order 2016 and the more recent Air Navigation (Amendment) Order 2018. Both of these exercise the powers conferred by certain sections of the Civil Aviation Act 1982 [[13]] [[14]].
   
@@ -116,7 +119,7 @@ Drone blades are not only harmful, but also very loud. The legal limit for flyin
 
 Perhaps the area that attracts the most debate, drones can easily become an invasion of privacy. Consumer drones, although can be used for artistic purposes, can easily accidentally take a picture of another person, or be used to stalk other people, both of which equate to an invasion of a person’s right to privacy [[16]].
   
-According to some civilians, police drones are the equivalent of having a “Big Brother” in the sky [[5]]. Certain property management companies conduct surveillance of their properties using commercial drones, often involving gathering data about individuals. Both of these also an invasion of people's right to privacy [[16]].
+According to some civilians, police drones are the equivalent of having a "Big Brother" in the sky [[5]]. Certain property management companies conduct surveillance of their properties using commercial drones, often involving gathering data about individuals. Both of these also an invasion of people's right to privacy [[16]].
 
 ## Conclusion 
 
@@ -128,160 +131,160 @@ Further from the Gatwick incidents, Heathrow airport was temporarily shut down o
   
 Given the nature of consumer quadcopters, these risks could have been assessed during drone design manufacture. Some drone models feature no-fly zones when planning GPS fly paths that prevent them from flying in restricted areas, such as aerodromes or prisons [[22]]. However, other drone manufacturers forewent this implementation, which could have lead to this incident taking place.
 
-In general, the social, legal, and ethical implications of computing should be considered during the design and development of new technologies, especially when they can be fully autonomous and function without human input. This ties in heavily with the recent advancements of artificial intelligence, which have went as far as to create a makeshift “battle against humanity” [[23]]. 
+In general, the social, legal, and ethical implications of computing should be considered during the design and development of new technologies, especially when they can be fully autonomous and function without human input. This ties in heavily with the recent advancements of artificial intelligence, which have went as far as to create a makeshift "battle against humanity" [[23]]. 
 
-Ideal technology-based products should be “ethical by design”, instead of relying on the users to be inherently ethical [[24]].
+Ideal technology-based products should be "ethical by design", instead of relying on the users to be inherently ethical [[24]].
 
 ## References
 
 [1]: https://www.bbc.co.uk/news/uk-england-sussex-46623754
 [[1]] 
-“Gatwick Airport: Drones ground flights,” 
+"Gatwick Airport: Drones ground flights," 
 BBC, 20-Dec-2018. 
 [Accessed: 9-Jan-2019].
 
 [2]: https://www.bbc.co.uk/news/uk-england-sussex-46643173
 [[2]] 
-“Gatwick runway reopens after drone chaos,” 
+"Gatwick runway reopens after drone chaos," 
 BBC, 21-Dec-2018. 
 [Accessed: 9-Jan-2019].
 
 [3]: https://www.mdpi.com/2220-9964/7/3/91/pdf
 [[3]] 
 M. Gevaert et al., 
-“Evaluating the Societal Impact of Using Drones to Support Urban Upgrading Projects,” 
+"Evaluating the Societal Impact of Using Drones to Support Urban Upgrading Projects," 
 ISPRS Int., 10-Mar-2018. 
 [Accessed: 9-Jan-2019].
 
 [4]: https://core.ac.uk/download/pdf/81514025.pdf
 [[4]] 
 C. Sandbrook, 
-“The social implications of using drones for biodiversity conservation,” 
+"The social implications of using drones for biodiversity conservation," 
 Springer, 2015. 
 [Accessed: 9-Jan-2019].
 
 [5]: https://www.nytimes.com/2013/02/16/technology/rise-of-drones-in-us-spurs-efforts-to-limit-uses.html
 [[5]] 
 S. Sengupta, 
-“Rise of Drones in U.S. Drives Efforts to Limit Police Use,” 
+"Rise of Drones in U.S. Drives Efforts to Limit Police Use," 
 The New York Times, 16-Feb-2013. 
 [Accessed: 12-Jan-2019].
 
 [6]: https://sites.google.com/site/givemedrones/social-issues
 [[6]] 
-“Social Issues - In Drones We Trust,” 
+"Social Issues - In Drones We Trust," 
 Google Sites. 
 [Accessed: 12-Jan-2019].
 
 [7]: https://www.gov.uk/government/organisations/civil-aviation-authority
 [[7]] 
-“Civil Aviation Authority,” 
+"Civil Aviation Authority," 
 GOV.UK. 
 [Accessed: 10-Jan-2019].
 
 [8]: https://www.caa.co.uk/Consumers/Unmanned-aircraft-and-drones
 [[8]] 
-“Unmanned aircraft and drones,” 
+"Unmanned aircraft and drones," 
 Civil Aviation Authority. 
 [Accessed: 10-Jan-2019].
 
 [9]: https://dronesafe.uk/wp-content/uploads/2018/06/Dronecode_2018-07-30.pdf
 [[9]] 
-“TheDrone Code,”
+"TheDrone Code,"
 Civil Aviation Authority. 
 [Accessed: 10-Jan-2019].
 
 [10]: https://www.alphr.com/technology/1002310/where-to-fly-your-drone-uk-drone-laws
 [[10]] 
-“Drone flying rules: Brush up on drone laws after Gatwick chaos,” 
+"Drone flying rules: Brush up on drone laws after Gatwick chaos," 
 Alphr. 
 [Accessed: 10-Jan-2019].
 
 [11]: http://www.legislation.gov.uk/ukpga/1982/16/introduction
 [[11]] 
 E. Participation, 
-“Civil Aviation Act 1982,” 
+"Civil Aviation Act 1982," 
 Legislation.gov.uk, 01-Jun-1982. 
 [Accessed: 10-Jan-2019].
 
 [12]: https://www.legislation.gov.uk/ukpga/1982/36/part/I
 [[12]] 
 E. Participation, 
-“Aviation Security Act 1982,” 
+"Aviation Security Act 1982," 
 Legislation.gov.uk, 
 01-Aug-1982. 
 [Accessed: 11-Jan-2019].
 
 [13]: http://www.legislation.gov.uk/uksi/2016/765/introduction/made
 [[13]] 
-“The Air Navigation Order 2016,” 
+"The Air Navigation Order 2016," 
 Legislation.gov.uk. 
 [Accessed: 11-Jan-2019].
 
 [14]: http://www.legislation.gov.uk/uksi/2018/623/made
 [[14]] 
-“The Air Navigation (Amendment) Order 2018,” 
+"The Air Navigation (Amendment) Order 2018," 
 Legislation.gov.uk. 
 [Accessed: 11-Jan-2019].
 
 [15]: https://www.bbc.co.uk/news/uk-46787730
 [[15]] 
-“Police to get new powers to tackle illegal drone use,” 
+"Police to get new powers to tackle illegal drone use," 
 BBC, 07-Jan-2019. 
 [Accessed: 13-Jan-2019].
 
 [16]: https://ieeexplore.ieee.org/document/6893424
 [[16]] 
 R. Wilson, 
-“Ethical issues with use of Drone aircraft,” 
+"Ethical issues with use of Drone aircraft," 
 IEEE, 2014. 
 [Accessed: 12-Jan-2019].
 
 [17]: https://www.bbc.co.uk/news/technology-46632892
 [[17]] 
 J. Wakefield, 
-“Gatwick airport: How can a drone cause so much chaos?,” 
+"Gatwick airport: How can a drone cause so much chaos?," 
 BBC, 21-Dec-2018. 
 [Accessed: 12-Jan-2019].
 
 [18]: https://www.gislounge.com/drones-and-gis-a-look-at-the-legal-and-ethical-issues
 [[18]] 
 C. Dempsey, 
-“Drones and GIS: A Look at the Legal and Ethical Issues,” 
+"Drones and GIS: A Look at the Legal and Ethical Issues," 
 GIS Lounge, 18-Dec-2016. 
 [Accessed: 12-Jan-2019].
 
 [19]: http://www.lakedistrict.gov.uk/visiting/thingstodo/drones
 [[19]]
-“Flying Drones,” 
+"Flying Drones," 
 Lake District National Park. 
 [Accessed: 12-Jan-2019].
 
 [20]: http://www.noflydrones.co.uk
 [[20]] 
-“No Fly Drones,” 
+"No Fly Drones," 
 No Fly Drones. 
 [Accessed: 12-Jan-2019].
 
 [21]: https://www.bbc.co.uk/news/uk-46803713
 [[21]] 
-“Heathrow airport: Drone sighting halts departures,” 
+"Heathrow airport: Drone sighting halts departures," 
 BBC, 08-Jan-2019. 
 [Accessed: 13-Jan-2019].
 
 [22]: https://www.dji.com/uk/flysafe/geo-map
 [[22]] 
-“Fly Safe Geo Zone Map,” DJI Official. 
+"Fly Safe Geo Zone Map," DJI Official. 
 [Accessed: 13-Jan-2019].
 
 [23]: https://deepmind.com/research/alphago
 [[23]] 
-“AlphaGo,” DeepMind. 
+"AlphaGo," DeepMind. 
 [Accessed: 13-Jan-2019].
 
 [24]: http://uir.ulster.ac.uk/38683/1/p51-mulvenna.pdf
 [[24]] 
 M. Mulvenna et al., 
-“Ethical by Design - A Manifesto,” 
+"Ethical by Design - A Manifesto," 
 Ulster University. 
 [Accessed: 13-Jan-2019].
