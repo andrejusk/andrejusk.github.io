@@ -79,7 +79,7 @@ a:hover {
 
 .header h2.subname {
     color: #4C4C4C;
-    font-size: 1.42147rem;
+    font-size: 1.35rem;
     font-family: "Merriweather", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
     font-weight: 600;
     letter-spacing: 0.060rem;
@@ -143,27 +143,49 @@ a:hover {
     color: #666666;
 }
 
+
+
 .content .markdown {
     font-family: "Merriweather"!important;
-    font-size: 1.4em !important;
+    font-size: 1.2rem !important;
     line-height: 2.1em !important;
     color: #313537;
 }
 
+
+@media (min-width: 1023.98px) {
+
+    .content .markdown {
+        font-size: 1.4rem !important;
+    }
+
+    .markdown h2 {
+        font-size: 1.6em !important;
+    }
+    
+    .markdown h3 {
+        font-size: 1.4em !important;
+    }
+    
+    .markdown h4 {
+        font-size: 1.3em !important;
+    }
+
+}
+
 .markdown h2 {
     margin-top: 2rem;
-    font-size: 1.6em !important;
 }
 
 .markdown h3 {
     margin-top: 1rem;
-    font-size: 1.4em !important;
 }
 
 .markdown h4 {
     margin-top: 0.5rem;
-    font-size: 1.3em !important;
 }
+
+
 
 .content twitterwidget {
     margin: auto;
