@@ -1,5 +1,5 @@
 +++
-title = "hi"
+title = "home page"
 date = "2019-01-19"
 menu = "main"
 +++
