@@ -2,7 +2,6 @@
 title = "Exposing a Feathers.JS HTTP API in Kubernetes using Ingress"
 description = "Learn about how to connect external traffic to a RESTful API in your k8s cluster using Feathers.JS and Ingress on GCP."
 tags = [
-    "typescript",
     "gcp"
 ]
 date = "2018-08-16"
