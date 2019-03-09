@@ -10,22 +10,27 @@
 
  */
 body {
-    font-family: "Raleway", sans-serif !important;
+    font-family: 
+        "Raleway", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        "Noto Sans", sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+        !important;
 }
 
 a,
 .footer a,
 .content a {
     color: #2196f3;
-    transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-    -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-    -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-    -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
-    -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 
 a:hover {
     color: #2a6496;
+    transition: color .1s cubic-bezier(0.47, 0, 0.75, 0.72);
+    -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+    -moz-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+    -ms-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
+    -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 
 
@@ -56,7 +61,6 @@ a:hover {
 .header h1.name {
     color: #333333;
     font-size: 2.3rem;
-    font-family: "Raleway", "Helvetica Neue", "Segoe UI", sans-serif;
     font-weight: 700;
     letter-spacing: -0.100rem;
     margin-bottom: 0;
@@ -65,9 +69,8 @@ a:hover {
 .header h2.subname {
     color: #4C4C4C;
     font-size: 1.35rem;
-    font-family: "Merriweather", "Helvetica Neue", "Segoe UI", "Arial", sans-serif;
-    font-weight: 600;
-    letter-spacing: 0.060rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
 }
 
 .header ul.nav li a {
@@ -105,6 +108,11 @@ a:hover {
     margin-right: 0.45rem;
 }
 
+.wf-active .nav-active {
+    opacity: 1 !important;
+    font-weight: 700;
+}
+
 @media (min-width: 767.98px) {
 
     .nav-upper {
@@ -117,19 +125,6 @@ a:hover {
         margin-right: 0.50rem;
     }
 
-}
-
-.text-bts {
-    opacity: 0 !important;
-    -o-transition: opacity .4s ease-out;
-    -ms-transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -webkit-transition: opacity .4s ease-out;
-    transition: opacity .4s ease-out;
-}
-
-.text-bts:hover {
-    opacity: .5 !important;    
 }
 
 .text-github {
@@ -160,7 +155,7 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: -0.005rem;
-    text-transform: "capitalize";
+    text-transform: capitalize;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     color: #333333;
@@ -201,8 +196,8 @@ a:hover {
 
 .content .markdown {
     font-family: "Merriweather";
-    font-size: 1.2rem !important;
-    line-height: 2.1em !important;
+    font-size: 1.2rem;
+    line-height: 2.1em;
     color: #313537;
     padding-bottom: 0rem;
     margin-bottom: 1rem;
@@ -223,19 +218,19 @@ a:hover {
 @media (min-width: 1023.98px) {
 
     .content .markdown {
-        font-size: 1.4rem !important;
+        font-size: 1.4rem;
     }
 
     .markdown h2 {
-        font-size: 1.6em !important;
+        font-size: 1.6em;
     }
     
     .markdown h3 {
-        font-size: 1.4em !important;
+        font-size: 1.4em;
     }
     
     .markdown h4 {
-        font-size: 1.3em !important;
+        font-size: 1.3em;
     }
 
 }
@@ -436,21 +431,37 @@ h1,
 .markdown,
 .best-posts,
 .posts,
-.footer {
+.footer,
+.nav-active,
+.text-behind-the-scenes {
     opacity: 0;
     transition: opacity 0.075s ease-out;
 }
 
 /* Load subname with name */
-.wf-raleway-n7-active .wf-merriweather-n7-active .name,
-.wf-merriweather-n7-active .subname,
-/* Navigation */
-.wf-raleway-n7-active .nav-upper,
-.wf-raleway-n4-active .nav-lower,
+.wf-raleway-n7-active .wf-raleway-n4-active .name,
+.wf-raleway-n4-active .subname,
 /* Content */
 .wf-raleway-n4-active h1,
-.wf-raleway-n4-active .meta {
+.wf-raleway-n4-active .meta,
+/* Navigation */
+.wf-active .nav-upper,
+/* Social */
+.wf-raleway-n4-active .nav-lower {
     opacity: 1;
+}
+
+.wf-active .text-behind-the-scenes {
+    opacity: 0;
+}
+
+.wf-active .text-behind-the-scenes:hover {
+    opacity: .5;    
+    -o-transition: opacity .4s ease-out;
+    -ms-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
 }
 
 .wf-active .markdown,

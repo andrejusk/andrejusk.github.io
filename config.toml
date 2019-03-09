@@ -9,6 +9,7 @@ canonifyurls = true
 googleAnalytics = "UA-132770332-1"
 languagecode = "en"
 enableGitInfo = true
+SectionPagesMenu = "primary"
 paginate = 3
 
 # Syntax highlighting
@@ -19,7 +20,7 @@ pygmentsstyle = "vs"
 [params]
 
     # Version control
-    version = "v2.12.3"
+    version = "v2.13.0"
     repo = "andrejusk.github.io"
     netlify = "goofy-feynman-78d8ed"
 
