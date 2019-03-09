@@ -17,7 +17,7 @@ page_not_found_link:
 pinned:
   other: "Featured"
 posts_about:
-  other: "Posts about '{{ .Title }}'"
+  other: "Posts tagged '{{ .Title }}'"
 reading_time:
   one: "{{ .Count }} minute"
   other: "{{ .Count }} minutes"

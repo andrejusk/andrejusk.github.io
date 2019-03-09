@@ -2,8 +2,7 @@
 title = "Gatwick Drones - the Social, Legal and Ethical Aspects of Computing"
 description = "Learn about the social, legal and ethical implications of the Gatwick Drones incident from the aspect of computing."
 tags = [
-    "sleac",
-    "coursework"
+    "academic"
 ]
 date = "2019-01-13"
 categories = [

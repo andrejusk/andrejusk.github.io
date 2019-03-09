@@ -2,6 +2,9 @@
 <html lang="{{ .Site.LanguageCode }}">
 
 <head>
+
+    <!-- Hugo defaults -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
@@ -9,6 +12,15 @@
     <meta name="MobileOptimized" content="320">
     <meta name="referrer" content="no-referrer">
     <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+    <link rel="canonical" href="{{ .Permalink }}">
+    <link rel="shortcut icon" href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}img/favicon.ico{{ end }}">
+
+    {{ if .RSSLink }}
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ end }}
+
+    <!-- Open Graph -->
+
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <meta property="og:locale" content="nn_NO" />
     <meta property="og:type" content="article" />
@@ -17,20 +29,17 @@
     <meta property="og:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
     <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
 
-    {{ if .Site.Params.twitter }}
-        <meta property="twitter:site" content="@{{ .Site.Params.twitter }}">
-    {{ end }}
+    <!-- Twitter -->
 
+    {{ if .Site.Params.twitter }}
+    <meta property="twitter:site" content="@{{ .Site.Params.twitter }}">
+    {{ end }}
     <meta property="twitter:title" content="{{ .Title | default .Site.Title }}" />
     <meta property="twitter:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
     <meta property="twitter:card" content="summary" />
     <meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
 
-    {{ if .Site.Params.flattr }}
-        <meta name="flattr:id" content="{{ .Site.Params.flattr }}">
-    {{ end }}
-
-    <link rel="canonical" href="{{ .Permalink }}">
+    <!-- Styles -->
 
     {{ with resources.Get "css/bootstrap.crit.css" | minify }}
         <style>{{ .Content | safeCSS }}</style>
@@ -38,32 +47,6 @@
 
     {{ with resources.Get "css/main.css" | minify }}
         <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-
-    <link rel="shortcut icon"
-        href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}img/favicon.ico{{ end }}">
-
-    {{ if .RSSLink }}
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{ end }}
-
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <noscript>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
-    </noscript>
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" as="style">
-
-    {{ if .Site.Params.highlightjs }}
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" as="style">
-    {{ end }}
-
-    {{ if .Site.Params.progressively }}
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.css" as="style">
     {{ end }}
 
     <noscript id="deferred">
@@ -79,6 +62,30 @@
         {{ end }}
 
     </noscript>
+
+    <!-- Fonts -->
+
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i" rel="stylesheet">
+    </noscript>
+
+    <!-- Optimisations -->
+
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" as="style">
+
+    {{ if .Site.Params.highlightjs }}
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" as="style">
+    {{ end }}
+
+    {{ if .Site.Params.progressively }}
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.css" as="style">
+    {{ end }}
+    
 </head>
 
 <body>
