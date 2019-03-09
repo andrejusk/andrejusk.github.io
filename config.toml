@@ -64,7 +64,7 @@ pygmentsstyle = "vs"
     weight = 20
 
     [[menu.primary]]
-    identifier = "talks"
+    identifier = "talk"
     name = "Talks"
     url = "/talk/"
     weight = 30
@@ -76,7 +76,7 @@ pygmentsstyle = "vs"
     weight = 40
 
     [[menu.primary]]
-    identifier = "bts"
+    identifier = "behind-the-scenes"
     name = "BTS"
     url = "/behind-the-scenes/"
     weight = 50
