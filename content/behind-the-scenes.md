@@ -21,3 +21,5 @@ latest article `commit` in page footer
 
 maintained in [vscode](https://code.visualstudio.com/)
 and [gitkraken](https://www.gitkraken.com/)
+
+is it any good? [yes](https://news.ycombinator.com/item?id=3067434)
