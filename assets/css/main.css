@@ -205,14 +205,17 @@ a:hover {
 
 .markdown h2 {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .markdown h3 {
     margin-top: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .markdown h4 {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (min-width: 1023.98px) {
