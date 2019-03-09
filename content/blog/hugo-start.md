@@ -46,9 +46,23 @@ looking to create a beautiful website."
 Although they are perfectly good for what they do,
 they'd feel like cheating for an engineer.
 
+I'll stop boring you with why you 
+should get your own website,
+let's actually build one.
+
 ## Choosing a CMS
 
+The first step to choose a
+**Content Management System (CMS)**.
 
+This choice will dictate how you will
+be building your website for the weeks,
+months, and years to come.
+
+I cannot stress enough how much 
+this choice impacts your experience.
+
+{{ Examples }}
 
 ## Setting up Hugo
 
