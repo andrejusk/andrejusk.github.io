@@ -1,5 +1,14 @@
+/* 
+        _       _           _ 
+       | |     | |         | |
+   __ _| | ___ | |__   __ _| |
+  / _` | |/ _ \| '_ \ / _` | |
+ | (_| | | (_) | |_) | (_| | |
+  \__, |_|\___/|_.__/ \__,_|_|
+   __/ |                      
+  |___/                       
 
-/* Global styles */
+ */
 body {
     font-family: "Raleway", sans-serif !important;
 }
@@ -19,44 +28,20 @@ a:hover {
     color: #2a6496;
 }
 
-.nav-upper {
-    letter-spacing: -0.005rem;
-    margin-right: -0.25rem;
-}
 
-.nav-lower {
-    letter-spacing: 0.035rem;
-    margin-right: 0.45rem;
-}
 
-@media (min-width: 767.98px) {
-
-    .nav-upper {
-        letter-spacing: 0.045rem;
-        margin-right: 0.50rem;
-    }
-    
-    .nav-lower {
-        letter-spacing: 0.015rem;
-        margin-right: 2.05rem;
-    }
-
-}
-
-/* Partial: Header */
+/* 
+  _                    _           
+ | |                  | |          
+ | |__   ___  __ _  __| | ___ _ __ 
+ | '_ \ / _ \/ _` |/ _` |/ _ \ '__|
+ | | | |  __/ (_| | (_| |  __/ |   
+ |_| |_|\___|\__,_|\__,_|\___|_|   
+                                   
+ */
 .header .row {
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(0,0,0,.1)
-}
-
-.content .markdown {
-    padding-bottom: 0rem;
-    margin-bottom: 1rem;
-}
-
-.footer .row {
-    padding-top: 2rem;
-    border-top: 1px solid rgba(0,0,0,.1)
 }
 
 .header a:hover {
@@ -99,7 +84,78 @@ a:hover {
     padding-right: 2px;
 }
 
-/* Partial: Content */
+
+
+/* 
+                    _                
+                   | |               
+  _ __   __ ___   _| |__   __ _ _ __ 
+ | '_ \ / _` \ \ / / '_ \ / _` | '__|
+ | | | | (_| |\ V /| |_) | (_| | |   
+ |_| |_|\__,_| \_/ |_.__/ \__,_|_|   
+                                     
+ */
+.nav-upper {
+    letter-spacing: -0.005rem;
+    margin-right: -0.25rem;
+}
+
+.nav-lower {
+    letter-spacing: 0.035rem;
+    margin-right: 0.45rem;
+}
+
+@media (min-width: 767.98px) {
+
+    .nav-upper {
+        letter-spacing: 0.045rem;
+        margin-right: 0.50rem;
+    }
+    
+    .nav-lower {
+        letter-spacing: 0.015rem;
+        margin-right: 0.50rem;
+    }
+
+}
+
+.text-bts {
+    opacity: 0 !important;
+    -o-transition: opacity .4s ease-out;
+    -ms-transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    transition: opacity .4s ease-out;
+}
+
+.text-bts:hover {
+    opacity: .5 !important;    
+}
+
+.text-github {
+    font-weight: 300;
+    color: #211f1f !important;
+}
+
+.text-twitter {
+    color: #00aced !important;
+}
+
+.text-linkedin {
+    color: #0077b5 !important;
+}
+
+
+
+/* 
+                  _             _   
+                 | |           | |  
+   ___ ___  _ __ | |_ ___ _ __ | |_ 
+  / __/ _ \| '_ \| __/ _ \ '_ \| __|
+ | (_| (_) | | | | ||  __/ | | | |_ 
+  \___\___/|_| |_|\__\___|_| |_|\__|
+                                    
+ */
 .content .page-heading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -143,15 +199,26 @@ a:hover {
     color: #666666;
 }
 
-
-
 .content .markdown {
-    font-family: "Merriweather"!important;
+    font-family: "Merriweather";
     font-size: 1.2rem !important;
     line-height: 2.1em !important;
     color: #313537;
+    padding-bottom: 0rem;
+    margin-bottom: 1rem;
 }
 
+.markdown h2 {
+    margin-top: 2rem;
+}
+
+.markdown h3 {
+    margin-top: 1rem;
+}
+
+.markdown h4 {
+    margin-top: 0.5rem;
+}
 
 @media (min-width: 1023.98px) {
 
@@ -173,20 +240,6 @@ a:hover {
 
 }
 
-.markdown h2 {
-    margin-top: 2rem;
-}
-
-.markdown h3 {
-    margin-top: 1rem;
-}
-
-.markdown h4 {
-    margin-top: 0.5rem;
-}
-
-
-
 .content twitterwidget {
     margin: auto;
 }
@@ -205,6 +258,31 @@ a:hover {
 .content .markdown blockquote {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    html {
+        font-size: 0.8rem;
+    }
+
+    .content .meta,
+    .content .markdown h1,
+    .content .markdown h2,
+    .content .markdown h3,
+    .content .markdown h4,
+    .content .markdown h5,
+    .content .markdown h6,
+    .content .markdown p,
+    .content .markdown ul,
+    .content .markdown ol,
+    .content .markdown dl,
+    .content .markdown blockquote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
 }
 
 .content .markdown code,
@@ -288,35 +366,22 @@ a:hover {
     height: 16px;
 }
 
-/* Menu texts */
-.text-bts {
-    color: rgba(0, 0, 0, 0) !important;
-    -o-transition: color .2s ease-out;
-    -ms-transition: color .2s ease-out;
-    -moz-transition: color .2s ease-out;
-    -webkit-transition: color .2s ease-out;
-    /* ...and now override with proper CSS property */
-    transition: color .2s ease-out;
+
+
+/* 
+   __            _            
+  / _|          | |           
+ | |_ ___   ___ | |_ ___ _ __ 
+ |  _/ _ \ / _ \| __/ _ \ '__|
+ | || (_) | (_) | ||  __/ |   
+ |_| \___/ \___/ \__\___|_|   
+                              
+ */
+.footer .row {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0,0,0,.1)
 }
 
-.text-bts:hover {
-    color: rgb(204, 204, 204) !important;    
-}
-
-.text-github {
-    font-weight: 300;
-    color: #211f1f !important;
-}
-
-.text-twitter {
-    color: #00aced !important;
-}
-
-.text-linkedin {
-    color: #0077b5 !important;
-}
-
-/* Partial: Footer */
 .footer a {
     font-size: 14px;
     opacity: 0.6;
@@ -351,30 +416,17 @@ a:hover {
     color: #666;
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    html {
-        font-size: 0.8rem;
-    }
 
-    .content .meta,
-    .content .markdown h1,
-    .content .markdown h2,
-    .content .markdown h3,
-    .content .markdown h4,
-    .content .markdown h5,
-    .content .markdown h6,
-    .content .markdown p,
-    .content .markdown ul,
-    .content .markdown ol,
-    .content .markdown dl,
-    .content .markdown blockquote {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
 
-/* Fade */
+/* 
+   __          _      
+  / _|        | |     
+ | |_ __ _  __| | ___ 
+ |  _/ _` |/ _` |/ _ \
+ | || (_| | (_| |  __/
+ |_| \__,_|\__,_|\___|
+                      
+ */
 .name,
 .subname,
 h1,
@@ -407,17 +459,3 @@ h1,
 .wf-active .footer {
     opacity: 1;
 }
-
-/*
-.wf-loading html {
-    color: #0000FF !important;
-}
-
-.wf-loading h1 {
-    color: #FF0000 !important;
-    transition: color 0.1s ease;
-}
-.wf-loading h2 {
-    color: #00FF00 !important;
-}
-*/
