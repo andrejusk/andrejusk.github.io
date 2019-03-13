@@ -47,6 +47,8 @@ pygmentsstyle = "vs"
 # Languages
 [languages]
     [languages.en]
+        contentDir = "content"
+        baseURL = "https://andrejus.uk/"
         languageName = "English"
         weight = 1
     [languages.lt]
