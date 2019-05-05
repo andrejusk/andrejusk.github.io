@@ -13,6 +13,8 @@ secrets:
 # Deployment
 steps:
 
+
+
 # Cloud Build x GitHub integration uses source archives to fetch
 # the source, rather than Git source fetching, and as a consequence
 # does not include the .git/ directory. As a workaround, we clone
@@ -32,10 +34,46 @@ steps:
     rm -rf tmp
     git submodule update --init --recursive
 
+
+
 # Build Hugo site
 - name: 'gcr.io/$PROJECT_ID/hugo'
+  args:
+    - '--gc'
+    - '--enableGitInfo'
+    - '--minify'
+  env:
+    - 'PROJECT_ID=$PROJECT_ID'
+    - 'BUILD_ID=$BUILD_ID'
+    - 'REPO_NAME=$REPO_NAME'
+    - 'BRANCH_NAME=$BRANCH_NAME'
+    - 'TAG_NAME=$TAG_NAME'
+    - 'REVISION_ID=$REVISION_ID'
 
-# Deploy to Firebase
+
+
+# Deploy to Dev (GAE)
+- name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      if [ "$BRANCH_NAME" != "master" ];
+      then gcloud app deploy;
+      else echo "not development, skipping...";
+      fi
+
+
+
+# Deploy to Prod (Firebase)
 - name: 'gcr.io/$PROJECT_ID/firebase'
-  args: ['deploy']
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      if [ "$BRANCH_NAME" == "master" ];
+      then firebase deploy;
+      else echo "not production, skipping...";
+      fi
+
   secretEnv: ['FIREBASE_TOKEN']
