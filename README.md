@@ -8,7 +8,7 @@ Actual README.md will come eventually.
 For Hugo Cloud Build image, run the following in Cloud Shell [[1]].
 ```sh
 ### Clone community cloud builders repo
-git clone https://github.com/GoogleCloudPlatform/cloud-builders-community.git
+git clone https://github.com/andrejusk/cloud-builders-community.git
 
 ### Navigate to Hugo (cloud-builders-community)
 cd cloud-builders-community/hugo
@@ -75,7 +75,7 @@ Now grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
 the IAM `Cloud KMS CrpytoKey Decrypter` role.
 
 ```sh
-### Clear environment variable
+### Clean up
 unset TOKEN
 ```
 
