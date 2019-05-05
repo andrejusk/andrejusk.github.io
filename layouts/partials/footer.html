@@ -12,12 +12,14 @@
                         <a href='https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/tree/{{ default "master" (getenv "BRANCH_NAME") }}'>
                             {{ default "local" (getenv "BRANCH_NAME") }}
                         </a>
-                        <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
-                            {{ .GitInfo.AbbreviatedHash }}
-                        </a>
-                        <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/releases/tag/{{ .Site.Params.version }}">
-                            {{ .Site.Params.version }}
-                        </a>
+                        {{ if $.GitInfo }}
+                            <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
+                                {{ .GitInfo.AbbreviatedHash }}
+                            </a>
+                            <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/releases/tag/{{ .Site.Params.version }}">
+                                {{ .Site.Params.version }}
+                            </a>
+                        {{ end }}
                     </div>
                 {{ end }}
             </div>
