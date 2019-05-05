@@ -1,10 +1,11 @@
 # [andrejus.uk](https://andrejus.uk/)
 
-Actual README.md will come eventually.
+Built and deployed with Google Cloud.
 
-## Cloud Build using GCP
+Actual README.md coming eventually. GCP documentation in the meantime.
 
-### Container Registry Images
+## Container Registry Images
+
 For Hugo Cloud Build image, run the following in Cloud Shell [[1]].
 ```sh
 ### Clone community cloud builders repo
@@ -17,7 +18,7 @@ cd cloud-builders-community/hugo
 gcloud builds submit --config cloudbuild.yaml .
 ```
 
-Firebase Cloud Build image for deployments [[1]]. Run after above.
+Firebase Cloud Build image for prod deployments [[1]]. Run after above.
 ```sh
 ### Navigate to Firebase (cloud-builders-community)
 cd ../firebase
@@ -29,7 +30,8 @@ chmod +x firebase.bash
 gcloud builds submit --config cloudbuild.yaml .
 ```
 
-### KMS for Deployment
+## KMS for Production Deployment
+
 Creating a deployment token for encryption [[2]]. Run locally or in Cloud Shell.
 
 ```sh
@@ -44,7 +46,12 @@ Run in Cloud Shell.
 TOKEN=<GENERATED_TOKEN>
 ```
 
-Cryptographic Keys service must be used before and enabled.
+If not used before.
+```sh
+### Enable Cryptographic Keys service
+gcloud services enable cloudkms.googleapis.com
+```
+
 
 ```sh
 #### Create a keyring for Cloud Build
@@ -71,13 +78,10 @@ secrets:
     FIREBASE_TOKEN: '<ENCRYPTED_TOKEN>'
 ```
 
-Now grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
-the IAM `Cloud KMS CrpytoKey Decrypter` role.
+## IAM for Staging
 
-```sh
-### Clean up
-unset TOKEN
-```
+Grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
+the IAM `App Engine Deployer` role.
 
 ## References
 
