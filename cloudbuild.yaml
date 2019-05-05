@@ -29,6 +29,7 @@ steps:
     git -C tmp checkout -qf FETCH_HEAD
     mv tmp/.git .git
     rm -rf tmp
+    git submodule update --init --recursive
 
 # Build Hugo site
 - name: 'gcr.io/$PROJECT_ID/hugo'
