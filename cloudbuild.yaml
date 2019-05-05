@@ -35,7 +35,19 @@ steps:
 # Build Hugo site
 - name: 'gcr.io/$PROJECT_ID/hugo'
 
-# Deploy to Firebase
+# Deploy to Dev (GAE)
+- name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      [[ "$BRANCH_NAME" != "master" ]] && gcloud app deploy
+
+# Deploy to Prod (Firebase)
 - name: 'gcr.io/$PROJECT_ID/firebase'
-  args: ['deploy']
+  entrypoint: 'bash'
+  args:
+    - '-c'
+    - |
+      [[ "$BRANCH_NAME" == "master" ]] && firebase deploy
   secretEnv: ['FIREBASE_TOKEN']
