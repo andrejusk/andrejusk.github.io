@@ -42,6 +42,13 @@ steps:
     - '--gc'
     - '--enableGitInfo'
     - '--minify'
+  env:
+    - 'PROJECT_ID=$PROJECT_ID'
+    - 'BUILD_ID=$BUILD_ID'
+    - 'REPO_NAME=$REPO_NAME'
+    - 'BRANCH_NAME=$BRANCH_NAME'
+    - 'TAG_NAME=$TAG_NAME'
+    - 'REVISION_ID=$REVISION_ID'
 
 
 
