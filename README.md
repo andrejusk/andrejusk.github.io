@@ -30,7 +30,7 @@ gcloud builds submit --config cloudbuild.yaml .
 ```
 
 ### KMS for Deployment
-Creating encrypted deployment key [[2]]. Run locally or in Cloud Shell.
+Creating a deployment token for encryption [[2]]. Run locally or in Cloud Shell.
 
 ```sh
 ### Generate new token to be encrypted
@@ -53,7 +53,7 @@ gcloud kms keyrings create cloudbuilder --location global
 #### Create a key for the Firebase token
 gcloud kms keys create firebase-token --location global --keyring cloudbuilder --purpose encryption
 
-#### create the encrypted token
+#### Create the encrypted token
 echo -n $TOKEN | gcloud kms encrypt \
   --plaintext-file=- \
   --ciphertext-file=- \
@@ -62,12 +62,22 @@ echo -n $TOKEN | gcloud kms encrypt \
   --key=firebase-token | base64
 ```
 
+Now add the encrypted token to the [cloudbuild.yaml](cloudbuild.yaml) definition, as follows.
+
+```yaml
+secrets:
+- kmsKeyName: 'projects/<PROJECT_ID>/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
+  secretEnv:
+    FIREBASE_TOKEN: '<ENCRYPTED_TOKEN>'
+```
+
+Now grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
+the IAM `Cloud KMS CrpytoKey Decrypter` role.
+
 ```sh
 ### Clear environment variable
 unset TOKEN
 ```
-
-
 
 ## References
 
