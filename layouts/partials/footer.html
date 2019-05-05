@@ -9,14 +9,12 @@
                         {{ else }}
                             <a href="{{ .Site.BaseURL }}license">{{ .Site.Params.copyright }}</a>
                         {{ end }}
-                        {{ if $.GitInfo }}
-                            <a href="https://app.netlify.com/sites/{{ .Site.Params.netlify }}/deploys/{{ .GitInfo.Hash }}/"> 
-                                build
-                            </a>
-                            <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
-                                {{ .GitInfo.AbbreviatedHash }}
-                            </a>
-                        {{ end }}
+                        <a href='https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/tree/{{ default "master" (getenv "BRANCH_NAME") }}'>
+                            {{ default "local" (getenv "BRANCH_NAME") }}
+                        </a>
+                        <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/commit/{{ .GitInfo.Hash }}/"> 
+                            {{ .GitInfo.AbbreviatedHash }}
+                        </a>
                         <a href="https://github.com/{{ .Site.Params.github }}/{{ .Site.Params.repo }}/releases/tag/{{ .Site.Params.version }}">
                             {{ .Site.Params.version }}
                         </a>
