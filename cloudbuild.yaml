@@ -28,6 +28,7 @@ steps:
     git -C tmp fetch origin "$COMMIT_SHA"
     git -C tmp checkout -qf FETCH_HEAD
     mv tmp/.git .git
+    mv tmp/.gitmodules .gitmodules
     rm -rf tmp
     git submodule update --init --recursive
 
