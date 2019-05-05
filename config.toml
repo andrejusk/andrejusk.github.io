@@ -20,7 +20,7 @@ pygmentsstyle = "vs"
 [params]
 
     # Version control
-    version = "v2.13.0"
+    version = "v3.0.0"
     repo = "andrejusk.github.io"
     netlify = "goofy-feynman-78d8ed"
 
