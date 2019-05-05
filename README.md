@@ -6,7 +6,9 @@ Actual README.md coming eventually. GCP documentation in the meantime.
 
 ## Container Registry Images
 
-For Hugo Cloud Build image, run the following in Cloud Shell [[1]].
+We'll need a Hugo builder image and a Firebase deployer image for the Cloud Build steps, along with the default gcloud images.
+
+For the Hugo builder image, run the following in Cloud Shell [[1]].
 ```sh
 ### Clone community cloud builders repo
 git clone https://github.com/andrejusk/cloud-builders-community.git
@@ -18,7 +20,7 @@ cd cloud-builders-community/hugo
 gcloud builds submit --config cloudbuild.yaml .
 ```
 
-Firebase Cloud Build image for prod deployments [[1]]. Run after above.
+Firebase deployer image for prod [[1]]. Run after above.
 ```sh
 ### Navigate to Firebase (cloud-builders-community)
 cd ../firebase
@@ -32,7 +34,7 @@ gcloud builds submit --config cloudbuild.yaml .
 
 ## KMS for Production Deployment
 
-Creating a deployment token for encryption [[2]]. Run locally or in Cloud Shell.
+The Firebase deployer needs a token to authenticate. Creating a deployment token and encrypting it [[2]]. Run locally or in Cloud Shell.
 
 ```sh
 ### Generate new token to be encrypted
@@ -46,7 +48,7 @@ Run in Cloud Shell.
 TOKEN=<GENERATED_TOKEN>
 ```
 
-If not used before.
+If KMS not used before.
 ```sh
 ### Enable Cryptographic Keys service
 gcloud services enable cloudkms.googleapis.com
@@ -78,10 +80,19 @@ secrets:
     FIREBASE_TOKEN: '<ENCRYPTED_TOKEN>'
 ```
 
-## IAM for Staging
+## IAM for Deployments
+
+The Firebase deployment token was encrypted using a KMS key. By default, the Cloud Builder's service account cannot access other GCP services, and hence cannot access the key to decrypt the token.
+
+To allow Cloud Build to decrypt the key.
 
 Grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
-the IAM `App Engine Deployer` role.
+the IAM `Cloud KMS CryptoKey Decrypter` role.
+
+To allow Cloud Build to deploy to App Engine.
+
+Grant `<PROJECT_NUMBER>@cloudbuild.gserviceaccount.com`
+the IAM `App Engine Admin` role.
 
 ## References
 
