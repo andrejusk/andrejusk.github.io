@@ -1,0 +1,41 @@
+# Definitions
+substitutions:
+  _REMOTE: https://github.com/andrejusk/andrejusk.github.io
+
+secrets:
+- kmsKeyName: 'projects/andrejus-web/locations/global/keyRings/cloudbuilder/cryptoKeys/firebase-token'
+  secretEnv:
+    FIREBASE_TOKEN: |-
+      CiQAti2GRDC1IQqKE/vFGs60POq48fM5+gBN5KhV5sJUDL1BVbESVgCKetms2BH0JsMS0hfsWsYy
+      H63c1yh3+2YgrE+qeYOcy/WCW5nlyc5Ufg4xF2wL7sCyPVSEjwNfY62zTKEQlpGZBZobrODR7RtQ
+      87IXsO6AeTRGv7Rm
+
+# Deployment
+steps:
+
+# Cloud Build x GitHub integration uses source archives to fetch
+# the source, rather than Git source fetching, and as a consequence
+# does not include the .git/ directory. As a workaround, we clone
+# the repository to grab the .git directory.
+#
+# Source: https://github.com/google/clusterfuzz/pull/141
+- name: gcr.io/cloud-builders/git
+  entrypoint: 'bash'
+  args:
+  - '-c'
+  - |
+    git clone ${_REMOTE} tmp
+    git -C tmp fetch origin "$COMMIT_SHA"
+    git -C tmp checkout -qf FETCH_HEAD
+    mv tmp/.git .git
+    mv tmp/.gitmodules .gitmodules
+    rm -rf tmp
+    git submodule update --init --recursive
+
+# Build Hugo site
+- name: 'gcr.io/$PROJECT_ID/hugo'
+
+# Deploy to Firebase
+- name: 'gcr.io/$PROJECT_ID/firebase'
+  args: ['deploy']
+  secretEnv: ['FIREBASE_TOKEN']
