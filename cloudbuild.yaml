@@ -38,6 +38,10 @@ steps:
 
 # Build Hugo site
 - name: 'gcr.io/$PROJECT_ID/hugo'
+  args:
+    - '--gc'
+    - '--enableGitInfo'
+    - '--minify'
 
 
 
