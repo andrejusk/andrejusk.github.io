@@ -60,7 +60,7 @@ steps:
   args:
     - '-c'
     - |
-      if [ "$BRANCH_NAME" != "master" ];
+      if [ "$BRANCH_NAME" == "master" ];
       then firebase deploy;
       else 0;
       fi
