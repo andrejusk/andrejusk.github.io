@@ -66,12 +66,10 @@
                             <img class="icon" src="{{ .Site.BaseURL }}img/email.svg" alt="email" />
                         </a>
                     {{ end }}
-
-                    {{ if .Site.RSSLink }}
-                        <a href="{{ .Site.RSSLink }}" class="mx-1 ml-md-2 mr-md-0">
-                            <img class="icon" src="{{ .Site.BaseURL }}img/rss.svg" alt="rss" />
-                        </a>
-                    {{ end }}
+                    
+                    <a href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' class="mx-1 ml-md-2 mr-md-0">
+                        <img class="icon" src="{{ .Site.BaseURL }}img/rss.svg" alt="rss" />
+                    </a>
 
                     {{ if .IsTranslated }}
                         <br />
