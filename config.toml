@@ -1,12 +1,12 @@
 # Content
 title = "andrejus kostarevas"
-copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
+copyright = "Copyright © 2019, Andrejus Kostarevas; all rights reserved."
+baseurl = "https://andrejus.uk/"
+googleAnalytics = "UA-132770332-1"
 
 # Config
 theme = "hugo-alageek-theme"
-baseurl = "https://andrejus.uk/"
 canonifyurls = true
-googleAnalytics = "UA-132770332-1"
 languagecode = "en"
 enableGitInfo = true
 SectionPagesMenu = "primary"
@@ -20,7 +20,7 @@ pygmentsstyle = "vs"
 [params]
 
     # Version control
-    version = "v2.13.0"
+    version = "v3.0.0"
     repo = "andrejusk.github.io"
     netlify = "goofy-feynman-78d8ed"
 
