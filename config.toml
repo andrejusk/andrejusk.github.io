@@ -43,12 +43,7 @@ pygmentsstyle = "vs"
     enableGitInfo = "true"
     latestpostcount = 5
     highlightjs = true
-
-# Languages
-[languages]
-    [languages.en]
-    languageName = "English"
-    weight = 1
+    posts_navigation = true
 
 # Menu
 [menu]
