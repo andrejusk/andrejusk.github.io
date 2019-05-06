@@ -5,7 +5,7 @@ baseurl = "https://andrejus.uk/"
 googleAnalytics = "UA-132770332-1"
 
 # Config
-theme = "hugo-alageek-theme"
+theme = "hugo-psi-theme"
 canonifyurls = true
 languagecode = "en"
 enableGitInfo = true
