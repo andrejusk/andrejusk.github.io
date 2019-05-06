@@ -25,7 +25,7 @@ pygmentsstyle = "vs"
     netlify = "goofy-feynman-78d8ed"
 
     # Content
-    subtitle = "software engineer / student"
+    subtitle = "software (over-) engineer"
     description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
     copyright = "© 2019"
     copyrightUrl = "https://andrejus.uk/"
