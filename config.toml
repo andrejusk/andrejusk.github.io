@@ -81,22 +81,3 @@ pygmentsstyle = "vs"
     name = "BTS"
     url = "/behind-the-scenes/"
     weight = 50
-
-    # Links
-    [[menu.secondary]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/andrejusk/"
-    weight = 100
-
-    [[menu.secondary]]
-    identifier = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/akostarevas/"
-    weight = 110
-
-    [[menu.secondary]]
-    identifier = "linkedin"
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/andrejusk/"
-    weight = 120
