@@ -4,6 +4,9 @@ date = "2019-01-19"
 menu = "main"
 +++
 
-Hi! Check out the [about me](./about) section,
-my contact details, or the posts below.
+Hi, welcome to my online **blog**.
+For updates, follow my Twitter [micro-blog](https://twitter.com/akostarevas).
 
+Catch up with recent posts below,
+or find out more about [me](./about)
+and the [site](./behind-the-scenes).
