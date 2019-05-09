@@ -59,7 +59,7 @@ steps:
     - '-c'
     - |
       if [ "$BRANCH_NAME" != "master" ];
-      then gcloud app deploy;
+      then gcloud app deploy --version $SHORT_SHA;
       else echo "not development, skipping...";
       fi
 
