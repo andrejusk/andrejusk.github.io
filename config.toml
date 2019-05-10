@@ -31,7 +31,7 @@ pygmentsstyle = "vs"
     copyrightUrl = "https://andrejus.uk/"
     faviconfile = "img/favicon-32x32.png"
     meta_img = "img/logo_black.png"
-    logofile = "img/logo.svg"
+    logofile = "static/img/logo.svg"
 
     # Social links
     github = "andrejusk"
