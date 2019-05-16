@@ -14,7 +14,7 @@ paginate = 3
 
 # Syntax highlighting
 pygmentsCodefences = true
-pygmentsstyle = "vs"
+pygmentsstyle = "monokai"
 
 # Website parameters
 [params]
