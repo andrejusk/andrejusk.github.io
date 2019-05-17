@@ -76,3 +76,6 @@ pygmentsstyle = "monokai"
     name = "BTS"
     url = "/behind-the-scenes/"
     weight = 50
+
+[services.rss]
+    limit = 20
