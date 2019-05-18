@@ -6,6 +6,7 @@ tags = [
     "cloud"
 ]
 menu = "main"
+time = "40 minutes"
 +++
 
 ## Abstract 
