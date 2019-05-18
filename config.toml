@@ -1,37 +1,38 @@
 # Content
 title = "andrejus kostarevas"
-copyright = "Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved."
+copyright = "Copyright © 2019, Andrejus Kostarevas; all rights reserved."
+baseurl = "https://andrejus.uk"
+googleAnalytics = "UA-132770332-1"
 
 # Config
-theme = "hugo-alageek-theme"
-baseurl = "https://andrejus.uk/"
 canonifyurls = true
-googleAnalytics = "UA-132770332-1"
 languagecode = "en"
 enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
 
-# Syntax highlighting
+# Theme
+theme = "hugo-psi-theme"
 pygmentsCodefences = true
-pygmentsstyle = "vs"
+pygmentsstyle = "monokai"
 
 # Website parameters
 [params]
 
     # Version control
-    version = "v2.13.0"
+    version = "v3.0.0"
     repo = "andrejusk.github.io"
     netlify = "goofy-feynman-78d8ed"
 
     # Content
-    subtitle = "software engineer / student"
+    subtitle = "software (over-) engineer"
     description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
     copyright = "© 2019"
-    copyrightUrl = "https://andrejus.uk/"
+    copyrightUrl = "https://github.com/andrejusk/andrejusk.github.io/blob/master/LICENSE"
+    issueUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new"
     faviconfile = "img/favicon-32x32.png"
     meta_img = "img/logo_black.png"
-    logofile = "img/logo.svg"
+    logofile = "static/img/logo.svg"
 
     # Social links
     github = "andrejusk"
@@ -43,12 +44,7 @@ pygmentsstyle = "vs"
     enableGitInfo = "true"
     latestpostcount = 5
     highlightjs = true
-
-# Languages
-[languages]
-    [languages.en]
-    languageName = "English"
-    weight = 1
+    posts_navigation = true
 
 # Menu
 [menu]
@@ -82,21 +78,5 @@ pygmentsstyle = "vs"
     url = "/behind-the-scenes/"
     weight = 50
 
-    # Links
-    [[menu.secondary]]
-    identifier = "github"
-    name = "GitHub"
-    url = "https://github.com/andrejusk/"
-    weight = 100
-
-    [[menu.secondary]]
-    identifier = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/akostarevas/"
-    weight = 110
-
-    [[menu.secondary]]
-    identifier = "linkedin"
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/andrejusk/"
-    weight = 120
+[services.rss]
+    limit = 20

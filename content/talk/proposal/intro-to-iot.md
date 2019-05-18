@@ -1,33 +1,13 @@
 +++
 title = "Getting Started in IoT using the Google Cloud"
+topic = "Cloud"
 description = ""
 tags = [
-    "iot",
-    "gcp",
-    "architecture"
-]
-date = "2018-11-07"
-categories = [
-    "tutorial",
-    "cloud",
+    "cloud"
 ]
 menu = "main"
+time = "40 minutes"
 +++
-
-## #RDGUK Office Hours _November_
-_Wednesday 1pm_ - _7th November 2018_ - 
-[Website](https://www.rdgukoh.co.uk/edition/november-2018) -
-[Slides](https://docs.google.com/presentation/d/1Qh6kBDKsF6hZm51ay9tLkppn_JwhzAQHnKB-r63c-jE)
-
-***
-
-## GDG Reading DevFest _Season 2018_
-_Saturday 5pm_ - _27th October 2018_ - 
-[Website](https://gdgreading-devfest18.firebaseapp.com/schedule/2018-10-27?sessionId=122) -
-[Video](https://www.youtube.com/watch?v=8_GzE6ry6VI) -
-[Slides](https://docs.google.com/presentation/d/1Sq2o8jlORFRuxNnrZxMmf4dbBiWAXv6ahFk6n9UGPAM/edit?usp=sharing)
-
-***
 
 ## Abstract 
 The current state of Internet of Things is quite intimidating – you've got over a dozen different ways to get your data to the cloud, hundreds of different cloud providers providing you with their cloud, and virtually limitless ways of developing and deploying your IoT application. 
