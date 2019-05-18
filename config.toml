@@ -5,16 +5,16 @@ baseurl = "https://andrejus.uk"
 googleAnalytics = "UA-132770332-1"
 
 # Config
-theme = "hugo-psi-theme"
 canonifyurls = true
 languagecode = "en"
 enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
 
-# Syntax highlighting
+# Theme
+theme = "hugo-psi-theme"
 pygmentsCodefences = true
-pygmentsstyle = "vs"
+pygmentsstyle = "monokai"
 
 # Website parameters
 [params]
@@ -31,7 +31,7 @@ pygmentsstyle = "vs"
     copyrightUrl = "https://andrejus.uk/"
     faviconfile = "img/favicon-32x32.png"
     meta_img = "img/logo_black.png"
-    logofile = "img/logo.svg"
+    logofile = "static/img/logo.svg"
 
     # Social links
     github = "andrejusk"
@@ -76,3 +76,6 @@ pygmentsstyle = "vs"
     name = "BTS"
     url = "/behind-the-scenes/"
     weight = 50
+
+[services.rss]
+    limit = 20

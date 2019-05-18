@@ -6,6 +6,7 @@ tags = [
     "academic"
 ]
 menu = "main"
+time = "20 minutes"
 +++
 
 ## Abstract 
