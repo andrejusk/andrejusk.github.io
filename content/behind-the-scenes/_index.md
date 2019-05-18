@@ -28,7 +28,7 @@ are deployed on Netlify.
 
 ***
 
-Bugs? Suggestions? Please file an issue [here](https://github.com/andrejusk/andrejusk.github.io/issues/new).
+Bugs? Suggestions? Please file an issue [here](https://github.com/andrejusk/andrejusk.github.io/issues/new/choose).
 
 Is it any good? [yes.](https://news.ycombinator.com/item?id=3067434)
 

@@ -5,8 +5,8 @@ baseurl = "https://andrejus.uk"
 googleAnalytics = "UA-132770332-1"
 
 # Config
-canonifyurls = true
 languagecode = "en"
+canonifyurls = true
 enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
@@ -22,14 +22,13 @@ pygmentsstyle = "monokai"
     # Version control
     version = "v3.0.0"
     repo = "andrejusk.github.io"
-    netlify = "goofy-feynman-78d8ed"
 
     # Content
     subtitle = "software (over-) engineer"
     description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
     copyright = "© 2019"
     copyrightUrl = "https://github.com/andrejusk/andrejusk.github.io/blob/master/LICENSE"
-    issueUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new"
+    issueUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new/choose"
     faviconfile = "img/favicon-32x32.png"
     meta_img = "img/logo_black.png"
     logofile = "static/img/logo.svg"
