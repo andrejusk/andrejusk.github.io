@@ -17,9 +17,11 @@ on [GitHub](https://github.com/andrejusk/andrejusk.github.io).
 Each page is stamped with 
 its latest commit in the footer.
 
-The `master` branch is built and deployed 
-using Cloud Build on Firebase Hosting --
-a global CDN powered by SSDs and SSL.
+The `master` branch is built using 
+[Google Cloud Build](https://cloud.google.com/cloud-build/)
+and deployed on 
+[Firebase Hosting](https://firebase.google.com/docs/hosting) 
+-- a global CDN powered by SSDs and SSL.
 
 The `develop` branch and outstanding issue PRs
 are deployed on Netlify.
@@ -30,4 +32,4 @@ Bugs? Suggestions? Please file an issue [here](https://github.com/andrejusk/andr
 
 Is it any good? [yes.](https://news.ycombinator.com/item?id=3067434)
 
-<img id="gopher" src="https://www.evanmiller.org/images/four-days-of-go/gopher3.png" class="img-fluid" alt="gopher">
+<img id="gopher" src="gopher.svg" class="img-fluid" alt="gopher">
