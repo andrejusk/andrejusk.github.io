@@ -5,14 +5,14 @@ baseurl = "https://andrejus.uk"
 googleAnalytics = "UA-132770332-1"
 
 # Config
-theme = "hugo-psi-theme"
 canonifyurls = true
 languagecode = "en"
 enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
 
-# Syntax highlighting
+# Theme
+theme = "hugo-psi-theme"
 pygmentsCodefences = true
 pygmentsstyle = "monokai"
 
