@@ -7,6 +7,9 @@ tags = [
 ]
 menu = "main"
 time = "40 minutes"
+aliases = [
+    "/talk/intro-to-iot/"
+]
 +++
 
 ## Abstract 
