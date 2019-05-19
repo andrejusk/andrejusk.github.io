@@ -7,6 +7,9 @@ tags = [
 ]
 menu = "main"
 time = "20 minutes"
+aliases = [
+    "/talk/infosec-coursework/"
+]
 +++
 
 ## Abstract 
