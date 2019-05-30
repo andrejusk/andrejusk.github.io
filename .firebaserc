@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "andrejus-web"
+  },
+  "targets": {
+    "andrejus-web": {
+      "hosting": {
+        "develop": [
+          "andrejus"
+        ]
+      }
+    }
   }
 }
