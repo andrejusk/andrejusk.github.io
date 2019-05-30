@@ -20,7 +20,7 @@ pygmentsstyle = "monokai"
 [params]
 
     # Version control
-    version = "v3.1.0"
+    version = "v3.1.1"
     repo = "andrejusk.github.io"
 
     # Content
