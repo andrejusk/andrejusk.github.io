@@ -4,12 +4,9 @@ date = "2019-01-20"
 menu = "main"
 +++
 
-This section contains the 
-available talk proposals.
-Additionally, there's a list of talks
-and workshops I've given to date.
+This section contains some of
+my available talk proposals.
 
-I'd be thrilled to give a talk at your meetup group.
 If you'd like me to come along
 to your event as a speaker,
-[contact me](../about).
+feel free to [contact me](../about).
