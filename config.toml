@@ -12,7 +12,6 @@ SectionPagesMenu = "primary"
 paginate = 3
 
 # Theme
-theme = "hugo-psi-theme"
 pygmentsCodefences = true
 pygmentsstyle = "monokai"
 
