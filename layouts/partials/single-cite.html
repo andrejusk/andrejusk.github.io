@@ -1,0 +1,18 @@
+<div class="citation">
+
+    <p>
+
+        <strong>{{ i18n "cite" }} </strong>
+        
+        [x]
+        {{ substr .Params.Author 0 1 }}.
+        {{ index (split .Params.Author " ") 1 }},
+        <i>&OpenCurlyDoubleQuote;{{ .Title }}&CloseCurlyDoubleQuote;,</i>
+        {{ .Date.Format  "2006" }}.
+        [Online].
+        Available:
+        <a href="{{ .Permalink }}">{{ .Permalink }}</a>.
+        [Accessed: dd-MMM-yyyy]
+    </p>
+
+</div>

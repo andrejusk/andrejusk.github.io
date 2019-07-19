@@ -1,0 +1,20 @@
+<div class="navigation">
+    {{ if .PrevInSection }}
+        <div class="text-left">
+            <a href="{{ .PrevInSection.Permalink }}">
+                    {{ readFile "static/img/back.svg" | safeHTML }} Previous <br>
+                {{ .PrevInSection.File.TranslationBaseName }}
+            </a>
+        </div>
+    {{ end }}
+</div>
+<div class="navigation">
+    {{ if .NextInSection }}
+        <div class="text-right">
+            <a href="{{ .NextInSection.Permalink }}">
+                Newer {{ readFile "static/img/next.svg" | safeHTML }} <br>
+                {{ .NextInSection.File.TranslationBaseName }}                                                
+            </a>
+        </div>
+    {{ end }}
+</div>
