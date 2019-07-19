@@ -1,0 +1,16 @@
+<strong>{{ i18n "share" }}</strong>
+
+<div class="share-buttons">
+    <div class="facebook" title="Share on Facebook" onclick="window.open('//www.facebook.com/share.php?u={{ .Permalink }}');">
+        {{ readFile "static/img/facebook.svg" | safeHTML }}
+    </div>
+    <div class="twitter" title="Share on Twitter" onclick="window.open('//twitter.com/home?status={{ .Permalink }}');">
+        {{ readFile "static/img/twitter.svg" | safeHTML }}
+    </div>
+    <div class="linkedin" title="Share on Linkedin" onclick="window.open('//www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title=&summary=&source=');">
+        {{ readFile "static/img/linkedin.svg" | safeHTML }}
+    </div>
+    <div class="email" title="Share through Email" onclick="window.open('mailto:?&body={{ .Permalink }}');">
+        {{ readFile "static/img/email.svg" | safeHTML }}
+    </div>
+</div>

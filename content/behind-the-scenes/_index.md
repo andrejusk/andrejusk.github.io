@@ -9,8 +9,8 @@ menu = "main"
 This website is built using [Hugo](https://gohugo.io/) --
 a fast and open-source static site generator 
 written in [Go](#gopher).
-The website's theme is [Hugo ψ](https://github.com/andrejusk/hugo-psi-theme) --
-a fork of a Cocoa theme fork.
+The website's theme is
+a fork of a [Cocoa theme fork](https://github.com/gkmngrgn/hugo-alageek-theme).
 
 The source content is hosted publicly 
 on [GitHub](https://github.com/andrejusk/andrejusk.github.io).

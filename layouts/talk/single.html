@@ -1,0 +1,39 @@
+{{ define "main" }}
+    {{ partial "header" . }}
+
+    <main class="content" role="main">
+        <div class="container">
+            
+            <!-- Article -->
+
+            <div class="row justify-content-center">
+
+                    <!-- Meta infromation -->
+    
+                    <div class="col-sm-12 col-md-9">
+    
+                        {{ partial "single-meta" . }}
+    
+                    </div>
+    
+                    <!-- Content -->
+    
+                    <div class="col-sm-12 col-md-9">
+    
+                        <div class="markdown">
+    
+                            {{ partial "content" . }}
+    
+                        </div>
+    
+                    </div>
+    
+                </div>    
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    {{ partial "footer" . }}
+{{ end }}
