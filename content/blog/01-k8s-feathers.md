@@ -1,5 +1,6 @@
 +++
 title = "Exposing a Feathers.JS HTTP API in Kubernetes using Ingress"
+slug = "k8s-feathers"
 author = "Andrejus Kostarevas"
 description = "Learn about how to connect external traffic to a RESTful API in your k8s cluster using Feathers.JS and Ingress on GCP."
 tags = [
