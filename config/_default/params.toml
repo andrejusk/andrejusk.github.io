@@ -1,0 +1,25 @@
+# Version control
+version = "v3.1.3"
+repo = "andrejusk.github.io"
+
+# Content
+subtitle = "software engineer"
+description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
+copyright = "© 2019"
+copyrightUrl = "https://github.com/andrejusk/andrejusk.github.io/blob/master/LICENSE"
+issueUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new/choose"
+faviconfile = "img/favicon-32x32.png"
+meta_img = "img/logo_black.png"
+logofile = "static/img/logo.svg"
+
+# Social links
+github = "andrejusk"
+twitter = "akostarevas"
+linkedin = "andrejusk"
+
+# Config
+noauthor = false
+enableGitInfo = "true"
+latestpostcount = 5
+highlightjs = true
+posts_navigation = true
