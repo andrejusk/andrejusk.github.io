@@ -1,0 +1,45 @@
+<!-- Default -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>{{ block "title" . }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+<meta name="theme-color" content="#121212" />
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="shortcut icon" href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}/img/favicon.ico{{ end }}">
+<link href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+<!-- Optimisations -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
+<meta property="og:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
+<meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
+
+<!-- Twitter -->
+<meta property="twitter:site" content="@{{ .Site.Params.twitter }}">
+<meta property="twitter:title" content="{{ .Title | default .Site.Title }}" />
+<meta property="twitter:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
+
+<!-- Styles -->
+{{ $css := resources.Get "css/main.css" }}
+{{ $style := $css | resources.Minify }}
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" as="style">
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" as="style">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" />
+
+<!-- Fonts -->
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" as="style">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
