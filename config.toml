@@ -2,7 +2,13 @@
 title = "andrejus kostarevas"
 copyright = "Copyright © 2019, Andrejus Kostarevas; all rights reserved."
 baseurl = "https://andrejus.uk"
+
+# Analytics
 googleAnalytics = "UA-132770332-1"
+[privacy]
+  [privacy.googleAnalytics]
+    respectDoNotTrack = true
+    useSessionStorage = true
 
 # Config
 languagecode = "en"
@@ -10,8 +16,6 @@ canonifyurls = true
 enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
-
-# Theme
 pygmentsCodefences = true
 pygmentsstyle = "monokai"
 
