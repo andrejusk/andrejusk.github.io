@@ -1,123 +1,20 @@
-<!doctype html>
-<html lang="{{ .Site.LanguageCode }}" class="dark">
+<!DOCTYPE html>
+<html amp lang='{{ .Site.Language }}' class='dark'>
 
-<head>
+    <head>
 
-    <!-- Hugo defaults -->
+        {{- partial "html/head" . -}}
+        
+    </head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="referrer" content="no-referrer">
-    <meta name="description" content="{{ .Description | default .Site.Params.description }}">
-    <meta name="theme-color" content="#121212" />
-    <link rel="canonical" href="{{ .Permalink }}">
-    <link rel="shortcut icon" href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}/img/favicon.ico{{ end }}">
-    <link href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    <body>
 
-    <!-- Open Graph -->
+        {{ block "main" . }}{{ end }}
 
-    <meta property="og:site_name" content="{{ .Site.Title }}" />
-    <meta property="og:locale" content="nn_NO" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}" />
-    <meta property="og:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
-    <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
+        {{ partial "html/footer" . }}
 
-    <!-- Twitter -->
-
-    {{ if .Site.Params.twitter }}
-    <meta property="twitter:site" content="@{{ .Site.Params.twitter }}">
-    {{ end }}
-    <meta property="twitter:title" content="{{ .Title | default .Site.Title }}" />
-    <meta property="twitter:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
-
-    <!-- Styles -->
-
-    {{ with resources.Get "css/bootstrap.crit.css" | minify }}
-        <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-
-    {{ with resources.Get "css/main.css" | minify }}
-        <style>{{ .Content | safeCSS }}</style>
-    {{ end }}
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
-
-    {{ if .Site.Params.highlightjs }}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" />
-    {{ end }}
-
-    {{ if .Site.Params.progressively }}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.css" />
-    {{ end }}
-
-
-    <!-- Fonts -->
-
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" as="style">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
-
-    <!-- Optimisations -->
-
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" as="style">
-
-    {{ if .Site.Params.highlightjs }}
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" as="style">
-    {{ end }}
-
-    {{ if .Site.Params.progressively }}
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.css" as="style">
-    {{ end }}
-    
-</head>
-
-<body>
-    {{ block "main" . }}{{ end }}
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha256-63ld7aiYP6UxBifJWEzz87ldJyVnETUABZAYs5Qcsmc=" crossorigin="anonymous"></script>
-
-    {{ if .Site.Params.highlightjs }}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-        {{ range .Site.Params.highlightjslanguages }}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js" defer></script>
-        {{ end }}
-        <script>
-            window.addEventListener('load', function() {
-                hljs.initHighlighting();
-            }, true);
-        </script>
-    {{ end }}
-
-    {{ if .Site.Params.progressively }}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.js" integrity="sha256-LvFVlLdfGI3WeEH+8Ni4kxLm02g2GlOfeGCGLXfRk/U=" crossorigin="anonymous"></script>
-        <script>
-            window.addEventListener('load', function() {
-                progressively.init({delay: 30, throttle: 50});
-            }, true);
-        </script>
-    {{ end }}
-
-    {{ if .Site.Params.uselatex }}
-        <script type="text/x-mathjax-config">
-            MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
-    {{ end }}
-
-    {{ template "_internal/google_analytics_async.html" . }}
-    {{ partial "footer_extra"  . }}
-</body>
+        {{ partial "footer_extra"  . }}
+        
+    </body>
 
 </html>
