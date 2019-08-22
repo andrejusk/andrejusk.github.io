@@ -13,6 +13,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "postcss-cli": "^6.1.3",
+    "postcss-font-magician": "^2.2.2",
     "typeface-inter": "^3.7.0",
     "typeface-raleway": "^0.0.75"
   }

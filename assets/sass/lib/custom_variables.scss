@@ -1,0 +1,29 @@
+
+
+$body-bg: #000;
+$body-color: #fff;
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136
+);
+
+// $theme-colors: (
+//   "primary":    ..,
+//   "secondary":  ..,
+//   "success":    ..,
+//   "info":       ..,
+//   "warning":    ..,
+//   "danger":     ..,
+//   "light":      ..,
+//   "dark":       ..
+// );
+
+$enable-rounded: true;
+$enable-shadows: true;
+$enable-gradients: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+$spacer: 1rem;
+

@@ -1,13 +1,19 @@
 <!-- Default -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="referrer" content="no-referrer">
+
+<!-- Meta -->
+<link rel="canonical" href="{{ .Permalink }}">
 <title>{{ block "title" . }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+
+<!-- Mobile -->
+<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
-<meta name="referrer" content="no-referrer">
-<meta name="description" content="{{ .Description | default .Site.Params.description }}">
+
+<!-- Custom -->
 <meta name="theme-color" content="#121212" />
-<link rel="canonical" href="{{ .Permalink }}">
 <link rel="shortcut icon" href="{{ if .Site.Params.faviconfile }}{{ .Site.Params.faviconfile | absURL }}{{ else }}{{ .Site.BaseURL }}/img/favicon.ico{{ end }}">
 <link href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 
@@ -32,11 +38,7 @@
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
 
-<!-- Styles -->
+<!-- Style -->
 {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "themes/simpleit/node_modules")) }}
-{{ $style := resources.Get "sass/main.scss" | toCSS $options | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" >
-
-<!-- Fonts -->
-<link rel="preload" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" as="style">
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,700,700i|Raleway:400,600,700&display=swap&subset=latin-ext" rel="stylesheet">
+{{ $styleMain := resources.Get "sass/main.scss" | toCSS $options | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styleMain.RelPermalink }}" >

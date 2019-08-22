@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp lang='{{ .Site.Language }}'>
+<html class="dark" lang='{{ .Site.Language }}'>
 
     <head>
 
@@ -8,12 +8,14 @@
     </head>
 
     <body>
+    
+        {{ partial "header" . }}
 
-        {{ block "main" . }}{{ end }}
+        {{ block "main" . }} {{ end }}
 
-        {{ partial "html/footer" . }}
+        {{ partial "footer" . }}
 
-        {{ partial "footer_extra"  . }}
+        {{ partial "html/foot" . }}
         
     </body>
 
