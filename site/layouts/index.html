@@ -37,7 +37,7 @@
                                 </ul>
 
                                 {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                                    <a href="{{ .Site.BaseURL }}/blog/" class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
+                                    <a href='{{ "/blog/" | relURL }} ' class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
                                 {{ end }}
                             {{ end }}
                         </div>
@@ -60,7 +60,7 @@
                                 </ul>
 
                                 {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                                    <a href="{{ .Site.BaseURL }}/talk/" class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
+                                    <a href='{{ "/talk/" | relURL }} ' class="font-italic mt-4 see-more">{{ i18n "see-more" }}</a>
                                 {{ end }}
                             {{ end }}
                         </div>

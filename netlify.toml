@@ -6,7 +6,7 @@
 
 [build]
     publish = "public"
-    command = "hugo --gc --minify --enableGitInfo -b $DEPLOY_PRIME_URL"
+    command = "yarn build"
 
 [context.production.environment]
     HUGO_VERSION = "0.55.5"
@@ -14,14 +14,14 @@
     HUGO_ENABLEGITINFO = "true"
 
 [context.deploy-preview]
-    command = "hugo --gc --minify -D -E -F -b $DEPLOY_PRIME_URL"
+    command = "yarn build"
 
     [context.deploy-preview.environment]
         HUGO_VERSION = "0.55.5"
         HUGO_ENABLEGITINFO = "true"
 
 [context.branch-deploy]
-    command = "hugo --gc --minify -D -E -F -b $DEPLOY_PRIME_URL"
+    command = "yarn build"
 
     [context.branch-deploy.environment]
         HUGO_VERSION = "0.55.5"

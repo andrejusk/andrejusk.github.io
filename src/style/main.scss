@@ -1,9 +1,9 @@
-// Base Bootstrap
+// Bootstrap Base
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
-// Custom theme
-@import "lib/custom_variables";
+// Bootstrap Overrides
+@import "custom_variables";
     
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -12,5 +12,5 @@
 @import "../../node_modules/highlightjs/styles/vs.css";
 
 // Custom theme
-@import "lib/psi.scss";
-@import "lib/styles.scss";
+@import "psi.scss";
+@import "styles.scss";

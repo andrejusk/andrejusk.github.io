@@ -2,7 +2,7 @@
     <span class="meta">{{ .Date.Format  "Jan 02, 2006" }}</span>
     <span></span>
     {{ if .Params.Talk }}
-        <a href="{{ .Site.BaseURL }}/talk/proposal/{{ .Params.Talk }}/">
+        <a href='{{ "/talk/proposal/{{ .Params.Talk }}/" | relURL }}'>
             <span>{{ .Title }}</span>
         </a> 
     {{ end }}

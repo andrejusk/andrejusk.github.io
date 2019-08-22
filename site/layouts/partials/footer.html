@@ -4,11 +4,7 @@
             <div class="col-sm-12 col-md-5">
                 {{ if .Site.Params.copyright }}
                     <div class="mx-0 mx-md-4 mb-2 text-center text-md-left">
-                        {{ if .Site.Params.copyrightUrl }}
-                            <a href="{{ .Site.Params.copyrightUrl }}">{{ .Site.Params.copyright }}</a>
-                        {{ else }}
-                            <a href="{{ .Site.BaseURL }}/license">{{ .Site.Params.copyright }}</a>
-                        {{ end }}
+                        <a href="{{ .Site.Params.copyrightUrl }}">{{ .Site.Params.copyright }}</a>
 
                         {{ $branch := default "local" (default (getenv "BRANCH_NAME") (getenv "BRANCH")) }}
 

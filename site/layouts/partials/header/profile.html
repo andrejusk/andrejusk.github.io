@@ -6,7 +6,7 @@
     
     <div class="col-auto offset-md-1 d-none d-md-block">
         {{ if .Site.Params.logofile }}
-            <a class="ml-md-4 logo" href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }} logo" aria-label="{{ .Site.Title }} logo">
+            <a class="ml-md-4 logo" href='{{ "/" | relURL }} ' alt="{{ .Site.Title }} logo" aria-label="{{ .Site.Title }} logo">
                 {{ readFile .Site.Params.logofile | safeHTML }}
             </a>
         {{ end }}
@@ -15,7 +15,7 @@
     <!-- Header -->
 
     <div class="col-auto align-self-center mr-auto">
-        <a href="{{ .Site.BaseURL }}/">
+        <a href='{{ "/" | relURL }} '>
             <h1 class="font-weight-bold name">{{ .Site.Title }}</h1>
             <h2 class="subname">{{ .Site.Params.subtitle }}</h1>
         </a>
