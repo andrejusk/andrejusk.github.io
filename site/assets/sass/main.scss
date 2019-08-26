@@ -1,15 +1,15 @@
 // Base Bootstrap
-@import "../../../dist/css/bootstrap/scss/functions";
-@import "../../../dist/css/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
 
 // Custom theme
 @import "lib/custom_variables";
     
 // Bootstrap
-@import "../../../dist/css/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // Highlight.js
-@import "../../../dist/css/highlightjs/styles/vs.css";
+@import "../../../node_modules/highlightjs/styles/vs.css";
 
 // Custom theme
 @import "lib/psi.scss";

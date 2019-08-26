@@ -3,27 +3,17 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON('package.json')
         
         copy:
-            main:
+            fonts:
                 files: [
-                    # node_modules CSS
+                    # fonts
                     {
                         expand: true,
                         cwd: 'node_modules'
                         src: [ 
-                            'bootstrap/**',
-                            'highlightjs/**'
-                        ],
-                        dest: 'dist/css/',
-                        filter: 'isFile'
-                    }
-                    # node_modules JS
-                    {
-                        expand: true,
-                        cwd: 'node_modules'
-                        src: [ 
-                            'jquery/**'
-                        ],
-                        dest: 'dist/js/',
+                            'typeface-inter/**',
+                            'typeface-raleway/**'
+                        ]
+                        dest: "build/",
                         filter: 'isFile'
                     }
                 ]
@@ -62,6 +52,6 @@ module.exports = (grunt) ->
         'grunt-contrib-watch'
         'grunt-contrib-connect'
     ]
-    grunt.registerTask 'dev', ['copy', 'hugo:dev']
-    grunt.registerTask 'default', ['copy', 'hugo:dist']
+    grunt.registerTask 'dev', ['copy:fonts', 'hugo:dev']
+    grunt.registerTask 'default', ['copy:fonts', 'hugo:dist']
     grunt.registerTask 'edit', ['connect', 'watch']
