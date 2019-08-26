@@ -6,6 +6,10 @@
   "repository": "https://github.com/andrejusk/andrejusk.github.io",
   "author": "Andrejus Kostarevas",
   "license": "MIT",
+  "scripts": {
+    "start": "hugo serve",
+    "build": "hugo"
+  },
   "dependencies": {
     "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
