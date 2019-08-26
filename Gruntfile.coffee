@@ -3,10 +3,30 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON('package.json')
         
         copy:
-            # This task is not required if `inline` source maps are used.
-            coffee:
-                src: 'coffee/*'
-                dest: 'site/static/'
+            main:
+                files: [
+                    # node_modules CSS
+                    {
+                        expand: true,
+                        cwd: 'node_modules'
+                        src: [ 
+                            'bootstrap/**',
+                            'highlightjs/**'
+                        ],
+                        dest: 'dist/css/',
+                        filter: 'isFile'
+                    }
+                    # node_modules JS
+                    {
+                        expand: true,
+                        cwd: 'node_modules'
+                        src: [ 
+                            'jquery/**'
+                        ],
+                        dest: 'dist/js/',
+                        filter: 'isFile'
+                    }
+                ]
            
         watch:
             options:
@@ -29,7 +49,7 @@ module.exports = (grunt) ->
 
     grunt.registerTask 'hugo', (target) ->
         done = @async()
-        args = ["--destination=build/#{target}"]
+        args = ["--source=site", "--destination=../build/#{target}"]
         if target == 'dev'
             args.push '--baseUrl=http://127.0.0.1:8080'
             args.push '--buildDrafts=true'
