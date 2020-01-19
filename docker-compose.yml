@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  hugo:
+    build:
+      context: https://github.com/gohugoio/hugo.git#v0.62.2
+      args:
+        HUGO_BUILD_TAGS: extended
+    command: serve
+    volumes:
+      - ./site:/site

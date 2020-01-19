@@ -2,10 +2,5 @@
 yarn-error.log
 node_modules
 
-# grunt
-/site/resources
-/dist
-/build
-
 # firebase
 .firebase
