@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 
 services:
   hugo:
@@ -6,6 +6,10 @@ services:
       context: https://github.com/gohugoio/hugo.git#v0.62.2
       args:
         HUGO_BUILD_TAGS: extended
-    command: serve
+    command: server
     volumes:
-      - ./site:/site
+      - type: bind
+        source: ./site
+        target: /site
+    ports:
+      - "1313:1313"
