@@ -38,7 +38,3 @@
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
 
-<!-- Style -->
-{{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "themes/simpleit/node_modules")) }}
-{{ $styleMain := resources.Get "sass/main.scss" | toCSS $options | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $styleMain.RelPermalink }}" >

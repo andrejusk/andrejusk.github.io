@@ -1,10 +1,9 @@
-title = "andrejus kostarevas"
-copyright = "Copyright © 2019, Andrejus Kostarevas; all rights reserved."
+title = "andrejus.uk"
+copyright = "Copyright © 2020"
 baseurl = "https://andrejus.uk"
 
 languagecode = "en_gb"
 canonifyurls = true
-enableGitInfo = true
 SectionPagesMenu = "primary"
 paginate = 3
 pygmentsCodefences = true
