@@ -2,14 +2,18 @@ version: "3.7"
 
 services:
   hugo:
+    container_name: hugo
     build:
       context: https://github.com/gohugoio/hugo.git#v0.62.2
       args:
         HUGO_BUILD_TAGS: extended
-    command: server
+    command:
+      - server
+      - --bind=0.0.0.0
+      - --buildDrafts
     volumes:
       - type: bind
         source: ./site
         target: /site
     ports:
-      - "1313:1313"
+      - 1313:1313
