@@ -23,3 +23,4 @@ enableGitInfo = "true"
 latestpostcount = 5
 highlightjs = true
 posts_navigation = true
+themecolor = "#121212"

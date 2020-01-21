@@ -1,4 +1,4 @@
-version: "3.7"
+version: "3.3"
 
 services:
   hugo:
@@ -11,9 +11,10 @@ services:
       - server
       - --bind=0.0.0.0
       - --buildDrafts
+      # - --templateMetrics
     volumes:
       - type: bind
         source: ./site
-        target: /site
+        target: /site/
     ports:
       - 1313:1313

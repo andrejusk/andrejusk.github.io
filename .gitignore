@@ -1,6 +1,12 @@
 # yarn
 yarn-error.log
-node_modules
+**/node_modules
 
 # firebase
 .firebase
+
+# vendor
+**/vendor
+
+# public
+**/public
