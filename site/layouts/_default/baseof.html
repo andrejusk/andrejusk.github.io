@@ -21,24 +21,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <meta property="og:site_name" content="{{ .Site.Title }}" />
-    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
-    <!-- <meta property="og:type" content="article" /> -->
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:title" content="{{ .Title | default .Site.Title }}" />
-    <meta property="og:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
-    <meta property="og:description" content="{{ .Description | default .Site.Params.description }}" />
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
 
-    <meta property="twitter:site" content="@{{ .Site.Params.twitter }}">
-    <!-- <meta property="twitter:card" content="summary" /> -->
-    <meta property="twitter:title" content="{{ .Title | default .Site.Title }}" />
-    <meta property="twitter:image" content="{{ .Params.meta_img | default .Site.Params.meta_img | absURL }}" />
-    <meta property="twitter:description" content="{{ .Description | default .Site.Params.description }}" />
-
-    <!-- Style --> 
-    {{ $options := (dict "targetPath" "css/style.css" "outputStyle" "compressed" "enableSourceMap" true)}} 
-    {{ $styleMain := resources.Get "sass/main.scss" | toCSS $options | postCSS | minify | fingerprint }} 
-    <link rel="stylesheet" href="{{ $styleMain.RelPermalink }}" >
 </head>
 
 <body>
@@ -48,33 +33,6 @@
     {{ block "main" . }} {{ end }}
 
     {{ partial "footer" . }}
-
-    {{ $jquery := resources.Get "vendor/js/jquery.min.js" }}
-    {{ $popperjs := resources.Get "vendor/js/popper.min.js" }}
-    {{ $bootstrap := resources.Get "vendor/js/bootstrap.min.js" }}
-    {{ $js := slice $jquery $popperjs $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
-
-    <script src="{{$js.RelPermalink}}"></script>
-
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"
-        integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-    {{ range .Site.Params.highlightjslanguages }}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{.}}.min.js" defer></script>
-    {{ end }}
-    <script>
-        window.addEventListener('load', function () {
-            hljs.initHighlighting();
-        }, true);
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/progressively/1.2.5/progressively.min.js"
-        integrity="sha256-LvFVlLdfGI3WeEH+8Ni4kxLm02g2GlOfeGCGLXfRk/U=" crossorigin="anonymous"></script>
-    <script>
-        window.addEventListener('load', function () {
-            progressively.init({ delay: 30, throttle: 50 });
-        }, true);
-    </script> -->
 
     {{ template "_internal/google_analytics_async.html" . }} -->
 

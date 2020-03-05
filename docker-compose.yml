@@ -4,7 +4,7 @@ services:
   hugo:
     container_name: hugo
     build:
-      context: https://github.com/gohugoio/hugo.git#v0.62.2
+      context: https://github.com/gohugoio/hugo.git#v0.66.0
       args:
         HUGO_BUILD_TAGS: extended
     command:
