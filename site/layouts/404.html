@@ -1,11 +1,5 @@
 {{ define "main" }}
 
-    <div class="my-4 my-md-5 header">
-        <div class="container">
-            {{ partial "header/profile" . }}
-        </div>
-    </div>
-
     <main class="content" role="main">
         <div class="container">
             
@@ -29,5 +23,4 @@
     
     <script src="{{ .Site.BaseURL }}/js/gol.min.js"></script>
 
-    {{ partial "footer" . }}
 {{ end }}
