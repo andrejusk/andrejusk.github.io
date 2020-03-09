@@ -35,50 +35,22 @@
             </div>
             <div class="col-sm-12 col-md-5">
                 <div class="mx-0 mx-md-4 text-center text-md-right">
-                    {{ if .Site.Params._500px }}
-                        <a href="https://500px.com/{{ .Site.Params._500px }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="500px">
-                            {{ readFile "static/img/500px.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
 
-                    {{ if .Site.Params.gitlab }}
-                        <a href="https://gitlab.com/{{ .Site.Params.gitlab }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="gitlab">
-                            {{ readFile "static/img/gitlab.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
+                    <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="github">
+                        {{ readFile "images/github.svg" | safeHTML }}
+                    </a>
 
-                    {{ if .Site.Params.facebook }}
-                        <a href="https://facebook.com/{{ .Site.Params.facebook }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="facebook">
-                            {{ readFile "static/img/facebook.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
-
-                    {{ if .Site.Params.github }}
-                        <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="github">
-                            {{ readFile "static/img/github.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
-
-                    {{ if .Site.Params.twitter }}
-                        <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="twitter">
-                            {{ readFile "static/img/twitter.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
-
-                    {{ if .Site.Params.linkedin }}
-                        <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="linkedin">
-                            {{ readFile "static/img/linkedin.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
-
-                    {{ if .Site.Params.email }}
-                        <a href="mailto:{{ .Site.Params.email }}" class="mx-1 ml-md-2 mr-md-0" aria-label="email">
-                            {{ readFile "static/img/email.svg" | safeHTML }}
-                        </a>
-                    {{ end }}
-                    
+                    <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="twitter">
+                        {{ readFile "images/twitter.svg" | safeHTML }}
+                    </a>
+                    <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="mx-1 ml-md-2 mr-md-0" aria-label="linkedin">
+                        {{ readFile "images/linkedin.svg" | safeHTML }}
+                    </a>
+                    <a href="mailto:{{ .Site.Params.email }}" class="mx-1 ml-md-2 mr-md-0" aria-label="email">
+                        {{ readFile "images/email.svg" | safeHTML }}
+                    </a>
                     <a href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}' class="mx-1 ml-md-2 mr-md-0" aria-label="rss">
-                        {{ readFile "static/img/rss.svg" | safeHTML }}
+                        {{ readFile "images/rss.svg" | safeHTML }}
                     </a>
 
                     {{ if .IsTranslated }}
