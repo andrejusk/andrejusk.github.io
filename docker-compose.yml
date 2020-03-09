@@ -11,7 +11,7 @@ services:
       - server
       - --bind=0.0.0.0
       - --buildDrafts
-      # - --templateMetrics
+      - --templateMetrics
     volumes:
       - type: bind
         source: ./site
