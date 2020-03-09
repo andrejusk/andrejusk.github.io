@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.Language }}'>
+<html lang="{{ .Site.Language }}">
 
 <head>
     <title>{{ block "title" . }}{{ .Title }} // {{ .Site.Title }}{{ end }}</title>
@@ -23,14 +23,26 @@
 
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
+
+    {{ $sourceStyle := resources.Get "sass/main.sass" }}
+    {{ with $sourceStyle }}
+        {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+        {{ $targetStyle := $sourceStyle | resources.ToCSS $options }}
+        <style type="text/css" amp-custom>
+            {{- $targetStyle.Content | safeCSS -}}
+        </style>
+    {{ end }}
+
 </head>
 
 <body>
-    {{ partial "header" . }}
+    <div class="container">
+        {{ partial "header" . }}
+    
+        {{ block "main" . }} {{ end }}
 
-    {{ block "main" . }} {{ end }}
-
-    {{ partial "footer" . }}
+        {{ partial "footer" . }}
+    </div>
 
     {{ template "_internal/google_analytics_async.html" . }}
 </body>

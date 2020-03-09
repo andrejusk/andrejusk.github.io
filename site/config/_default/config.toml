@@ -2,6 +2,7 @@ title = "andrejus.uk"
 copyright = "Copyright © 2020"
 baseurl = "https://andrejus.uk"
 
+enableEmoj = true
 languagecode = "en_gb"
 canonifyurls = true
 SectionPagesMenu = "primary"
