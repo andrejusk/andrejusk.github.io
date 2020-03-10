@@ -1,12 +1,84 @@
+// ----------------------------------------------------------------------------
+//       Mixins
+// ----------------------------------------------------------------------------
+/// Responsive breakpoints
+/// @author Hugo Giraudel
+$breakpoints: ('small':  767px, 'medium': 992px, 'large':  1200px)
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint)
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint)
+        // Prints a media query based on the value
+        @media (min-width: map-get($breakpoints, $breakpoint))
+            @content
+
+// A quick and simple font-weight mixin
+// Inspired by a tweet by Sidoruk Sergey (@Sidoruk_SV)
+// https://twitter.com/Sidoruk_SV/status/422746337394716672
+@mixin font-weight($weight)
+  $weights: (thin: 100,extra-light: 200,light: 300,regular: 400,medium: 500,semi-bold: 600,bold: 700,extra-bold: 800,black: 900)
+  
+  $output: $weight
+  @if map-has-key($weights, $weight) 
+    $output: map-get($weights, $weight)
+  
+  font-weight: $output
+
+// ----------------------------------------------------------------------------
+//       Typography
+// ----------------------------------------------------------------------------
+$sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+
+h1, h2
+    @include font-weight(medium)
+    line-height: 1.2
+
+h1
+    font-size: 2.5rem
+
+h2
+    font-size: 2rem
+
+// ----------------------------------------------------------------------------
+//       Layout
+// ----------------------------------------------------------------------------
+body
+    margin: 0
+    font-family: $sans
+    font-size: 1rem
+    @include font-weight(regular)
+
 .container
+    margin: auto
+    @include respond-to('large')
+        max-width: 1140px
+
+.flex
     display: flex
+
+    .item
+        flex: 1
+
+    .stretch
+        align-items: stretch
+
+.flex-horizontal
+    flex-direction: row
+
+.flex-vertical
     flex-direction: column
 
-    // header
-    //     flex: 1 1 auto
+header
+    flex-direction: row
 
-    // main
-    //     flex: 1 1 auto
+    a svg
+        width: 12.1352549156rem
+        height: 12.1352549156rem
 
-    // footer
-    //     flex: 1 1 auto
+    nav
+
+footer
+    a svg
+        width: 1.5rem
+        height: 1.5rem

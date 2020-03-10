@@ -36,15 +36,23 @@
 </head>
 
 <body>
-    <div class="container">
-        {{ partial "header" . }}
-    
-        {{ block "main" . }} {{ end }}
 
-        {{ partial "footer" . }}
+    <div class="container flex flex-vertical">
+
+        <div class="item">
+            {{ partial "header" . }}
+        </div>
+        <div class="item stretch">
+            {{ block "main" . }} {{ end }}
+        </div>
+        <div class="item">
+            {{ partial "footer" . }}
+        </div>
+    
+        {{ template "_internal/google_analytics_async.html" . }}
+
     </div>
 
-    {{ template "_internal/google_analytics_async.html" . }}
 </body>
 
 </html>
