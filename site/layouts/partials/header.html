@@ -1,10 +1,8 @@
-<header class="row" role="banner">
+<header class="item flex flex-horizontal" role="banner">
 
-    <div>
-        <a href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }} logo" aria-label="{{ .Site.Title }} logo">
-            {{ readFile .Site.Params.logoSource | safeHTML }}
-        </a>
-    </div>
+    <a href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }} logo" aria-label="logo">
+        {{ readFile .Site.Params.logoSource | safeHTML }}
+    </a>
 
     <nav>
 
@@ -15,14 +13,14 @@
 
         <ul>
             {{ range .Site.Menus.primary.ByWeight }}
-                <li class="nav-item">
-                    <!-- nav-active if in section -->
-                    <a class='text-uppercase {{ if or ($.IsMenuCurrent "primary" .) ($.HasMenuCurrent "primary" .) }} nav-active {{ end }} nav-upper nav-link {{ if .Identifier }} text-{{ .Identifier }}{{ end }}'
-                        href="{{ .URL }}">
-                        {{ .Pre }}
-                        {{ .Name }}
-                    </a>
-                </li>
+            <li>
+                <!-- nav-active if in section -->
+                <a class='text-uppercase {{ if or ($.IsMenuCurrent "primary" .) ($.HasMenuCurrent "primary" .) }} nav-active {{ end }} nav-upper nav-link {{ if .Identifier }} text-{{ .Identifier }}{{ end }}'
+                    href="{{ .URL }}">
+                    {{ .Pre }}
+                    {{ .Name }}
+                </a>
+            </li>
             {{ end }}
         </ul>
 
