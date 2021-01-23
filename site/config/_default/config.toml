@@ -1,0 +1,6 @@
+title = "andrejus.uk"
+copyright = "Copyright © 2021"
+baseurl = "https://andrejus.uk"
+
+languagecode = "en_gb"
+canonifyurls = true
