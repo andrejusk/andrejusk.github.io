@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+  <head>
+    <title>{{ .Site.Title }}</title>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <meta
+      name="description"
+      content="{{ .Description | default .Site.Params.description }}"
+    />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="theme-color" content="{{ .Site.Params.ThemeColor }}" />
+
+    <!-- Redirect browser to GitHub -->
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://github.com/{{ .Site.Params.github }}"
+    />
+
+    <link rel="shortcut icon" href="{{ .Site.Params.faviconfile | absURL }}" />
+  </head>
+
+  <body>
+    <div>{{ block "main" . }} {{ end }}</div>
+  </body>
+</html>

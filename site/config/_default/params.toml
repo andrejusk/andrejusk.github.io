@@ -1,0 +1,14 @@
+description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Oxford, UK. See his portfolio of open-source projects."
+
+logoSource = "images/logo.svg"
+faviconfile = "favicon-32x32.png"
+meta_img = "favicon-32x32.png"
+
+copyrightUrl = "https://github.com/andrejusk/andrejusk.github.io/blob/master/LICENSE"
+reportUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new/choose"
+
+repo = "andrejusk.github.io"
+github = "andrejusk"
+
+minify = true
+themecolor = "#121212"
