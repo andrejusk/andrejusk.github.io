@@ -9,7 +9,8 @@
 **/vendor
 
 # public
-**/public
+**/public/*
+!**/public/.gitkeep
 
 # hugo
 site/resources
