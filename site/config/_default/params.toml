@@ -1,5 +1,4 @@
-subtitle = "software engineer"
-description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Reading, UK. See his portfolio of talks, open-source projects and articles."
+description = "Andrejus is a Software Engineer and Cloud Specialist, currently studying and based in Oxford, UK. See his portfolio of open-source projects."
 
 logoSource = "images/logo.svg"
 faviconfile = "favicon-32x32.png"
@@ -10,14 +9,6 @@ reportUrl = "https://github.com/andrejusk/andrejusk.github.io/issues/new/choose"
 
 repo = "andrejusk.github.io"
 github = "andrejusk"
-twitter = "akostarevas"
-linkedin = "andrejusk"
 
-# Config
 minify = true
-noauthor = false
-enableGitInfo = "true"
-latestpostcount = 5
-highlightjs = true
-posts_navigation = true
 themecolor = "#121212"

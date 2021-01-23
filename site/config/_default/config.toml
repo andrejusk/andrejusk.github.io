@@ -1,46 +1,6 @@
 title = "andrejus.uk"
-copyright = "Copyright © 2020"
+copyright = "Copyright © 2021"
 baseurl = "https://andrejus.uk"
 
-enableEmoj = true
 languagecode = "en_gb"
 canonifyurls = true
-SectionPagesMenu = "primary"
-paginate = 3
-pygmentsCodefences = true
-pygmentsstyle = "monokai"
-
-# Menu
-[menu]
-    [[menu.primary]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-
-    [[menu.primary]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 20
-
-    [[menu.primary]]
-    identifier = "talk"
-    name = "Talks"
-    url = "/talk/"
-    weight = 30
-
-    [[menu.primary]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
-
-    [[menu.primary]]
-    identifier = "behind-the-scenes"
-    name = "BTS"
-    url = "/behind-the-scenes/"
-    weight = 50
-
-[services.rss]
-    limit = 20
